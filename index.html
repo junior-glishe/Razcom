@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Razcom – Votre envol vers l'Europe</title>
+<link rel="icon" type="image/png" href="images/Logo.png">
+<link rel="apple-touch-icon" href="images/Logo.png">
+<meta name="description" content="Razcom accompagne vos projets d'études, d'expatriation, d'affaires et de tourisme vers l'Europe. Expertise consulaire, suivi humain, départs confirmés.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{lime:'#d9f76b'}}}}</script>
+<style>
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:#050505;color:#fff;-webkit-font-smoothing:antialiased}
+.i{width:1.15em;height:1.15em;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none;display:inline-block;vertical-align:-.2em}
+.i.f{fill:currentColor;stroke-width:0}
+.bi{background-size:cover;background-position:center}
+.nsb::-webkit-scrollbar{display:none}.nsb{scrollbar-width:none}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.8,.2,1) calc(var(--d,0)*90ms),transform .9s cubic-bezier(.2,.8,.2,1) calc(var(--d,0)*90ms)}
+.rv.in{opacity:1;transform:none}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.12em;margin-bottom:-.12em}
+.w>span{display:inline-block;transform:translateY(110%);transition:transform 1s cubic-bezier(.2,.8,.2,1) calc(var(--i)*55ms)}
+.in .w>span{transform:none}
+.btn{display:inline-flex;align-items:center;gap:.55rem;border-radius:999px;padding:.9rem 1.5rem;font-weight:500;font-size:13px;transition:transform .4s cubic-bezier(.2,.8,.2,1),background .3s,box-shadow .4s,color .3s}
+.btn:hover{transform:translateY(-2px)}.btn .i{transition:transform .4s cubic-bezier(.2,.8,.2,1)}.btn:hover .i{transform:translateX(4px)}
+.bl{background:#d9f76b;color:#000}.bl:hover{box-shadow:0 12px 32px -12px #d9f76b}
+.bg{background:rgba(255,255,255,.1);color:#fff;backdrop-filter:blur(10px)}.bg:hover{background:rgba(255,255,255,.2)}
+.bk{background:#000;color:#fff}.bk:hover{background:#222}
+.card{transition:transform .6s cubic-bezier(.2,.8,.2,1),border-color .4s,background .4s}.card:hover{transform:translateY(-6px)}
+.zm{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}.card:hover .zm{transform:scale(1.06)}
+.chip{transition:background .3s,color .3s,transform .3s,border-color .3s}.chip:hover{transform:translateY(-2px)}
+.mq{display:flex;width:max-content;animation:mq 50s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}
+.mq:hover{animation-play-state:paused}
+.fq .b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s cubic-bezier(.2,.8,.2,1)}.fq .b>p{overflow:hidden}.fq.open .b{grid-template-rows:1fr}
+.fq .ic{transition:transform .4s cubic-bezier(.2,.8,.2,1)}.fq.open .ic{transform:rotate(45deg)}
+.bar{transition:width 1s cubic-bezier(.2,.8,.2,1),margin 1s cubic-bezier(.2,.8,.2,1)}
+input[type=range]{-webkit-appearance:none;appearance:none;height:4px;border-radius:9px;width:100%;background:linear-gradient(to right,#050505 var(--p),rgba(0,0,0,.12) var(--p));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#d9f76b;border:4px solid #050505;cursor:pointer;transition:transform .25s}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.25)}
+input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:#d9f76b;border:4px solid #050505}
+.fl{position:relative}.fl input,.fl select,.fl textarea{width:100%;background:transparent;border-bottom:1px solid rgba(0,0,0,.25);padding:1.5rem 0 .5rem;outline:none;transition:border-color .3s;border-radius:0;color:#000}
+.fl input:focus,.fl select:focus,.fl textarea:focus{border-color:#000}
+.fl label{position:absolute;left:0;top:1.1rem;font-size:14px;color:rgba(0,0,0,.5);pointer-events:none;transition:all .3s cubic-bezier(.2,.8,.2,1)}
+.fl input:focus+label,.fl input:not(:placeholder-shown)+label,.fl textarea:focus+label,.fl textarea:not(:placeholder-shown)+label,.fl select:valid+label{top:0;font-size:11px;color:#000}
+.stroke{-webkit-text-stroke:1px rgba(255,255,255,.3);color:transparent}
+.panel{transform-origin:bottom right;transition:opacity .4s,transform .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes rin{from{opacity:0;transform:translateY(18px)}}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.w>span{transform:none}}
+</style>
+<style>
+:root{--ink:#0a0a0a;--paper:#f2f0e8;--paper2:#e7e4d8;--lime:#d9f76b;--ease:cubic-bezier(.2,.8,.2,1);--lineL:rgba(10,10,10,.14);--lineD:rgba(255,255,255,.13)}
+::selection{background:var(--lime);color:#000}
+body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:140px}
+.wrapx{max-width:1340px;margin-inline:auto;padding-inline:clamp(1.15rem,3.4vw,2.75rem)}
+.paper,.dark{position:relative}
+.paper{background:var(--paper);color:var(--ink)}
+.dark{background:#050505;color:#fff}
+.sec{padding-block:clamp(4.5rem,9vw,8rem)}
+.display{font-size:clamp(2.6rem,6.3vw,5.6rem);line-height:.95;letter-spacing:-.05em;font-weight:300}
+.h2{font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.02;letter-spacing:-.04em;font-weight:300}
+.kicker{font-size:10px;letter-spacing:.3em;text-transform:uppercase;font-weight:500;display:inline-flex;align-items:center;gap:.7rem}
+.kicker::before{content:"";width:30px;height:1px;background:currentColor;opacity:.45}
+.lead{font-size:14.5px;line-height:1.8;opacity:.62;max-width:42ch}
+.outline{color:transparent;-webkit-text-stroke:1.2px rgba(10,10,10,.45)}
+.dark .outline{-webkit-text-stroke:1.2px rgba(255,255,255,.4)}
+.tx-lime{color:var(--lime)}
+.glow{position:absolute;border-radius:50%;filter:blur(100px);background:radial-gradient(circle,rgba(217,247,107,.16),transparent 65%);pointer-events:none}
+.big-ghost{position:absolute;font-size:clamp(9rem,24vw,22rem);line-height:.7;font-weight:300;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);pointer-events:none;user-select:none}
+.paper .big-ghost{-webkit-text-stroke:1px rgba(10,10,10,.08)}
+#hd{color:#fff}
+#hbar{transition:background .5s,box-shadow .5s,border-color .5s}
+#hbar.on{background:rgba(5,5,5,.78);box-shadow:0 12px 40px -18px rgba(0,0,0,.9);border-color:rgba(255,255,255,.14)}
+.nlink{position:relative}
+.nlink::after{content:"";position:absolute;left:50%;right:50%;bottom:6px;height:1px;background:#d9f76b;transition:left .35s var(--ease),right .35s var(--ease)}
+.nlink:hover::after,.nlink.active::after{left:22%;right:22%}
+.nlink.active{background:rgba(255,255,255,.08)}
+#bar{box-shadow:0 0 18px rgba(217,247,107,.55)}
+
+.tag{font-size:9px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--lineD);border-radius:99px;padding:.38rem .7rem;opacity:.7;white-space:nowrap;transition:background .3s,color .3s,transform .3s,border-color .3s}
+.tag:hover{transform:translateY(-2px)}
+.tag.lime{color:var(--lime);border-color:rgba(217,247,107,.3);opacity:1}
+
+.post{position:relative;transition:transform .5s var(--ease),box-shadow .5s}
+.post:hover{transform:translateY(-6px);box-shadow:0 30px 60px -40px rgba(0,0,0,.5)}
+.post:hover .zm{transform:scale(1.06)}
+.stamp-mini{width:46px;height:46px;border:1px dashed currentColor;border-radius:50%;display:grid;place-items:center;font-size:7px;line-height:1.1;text-align:center;letter-spacing:.08em;text-transform:uppercase;opacity:.6;transform:rotate(-12deg)}
+#tl{position:relative;padding-left:clamp(1.2rem,3vw,2rem);border-left:1px solid var(--lineL);background:none}
+#tl::before{content:"";position:absolute;left:-1px;top:0;width:2px;height:var(--p,0%);background:var(--ink);transition:height .2s linear}
+.step{position:sticky;top:calc(6rem + var(--k,0)*1.4rem);background:var(--paper);border:1px solid var(--lineL);border-radius:18px;padding:clamp(1.4rem,3vw,2.2rem);margin-bottom:1rem;z-index:calc(10 + var(--k,0));box-shadow:0 20px 50px -45px #000}
+.step:last-child{margin-bottom:0}
+@media(max-width:1023px){.step{position:relative;top:auto}}
+.why-row{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:clamp(1rem,3vw,2.5rem);align-items:start;padding-block:clamp(1.4rem,3vw,2.2rem);border-top:1px solid var(--lineD);transition:background .4s,padding-left .4s}
+.why-row:last-child{border-bottom:1px solid var(--lineD)}
+.why-row:hover{background:rgba(217,247,107,.04);padding-left:1rem}
+.why-row .wi{width:42px;height:42px;border-radius:50%;border:1px solid var(--lineD);display:grid;place-items:center;color:var(--lime)}
+.dchip{display:inline-flex;align-items:center;gap:.65rem;border:1px solid var(--lineL);border-radius:99px;padding:.45rem .95rem .45rem .5rem;font-size:13px;background:transparent;color:inherit;transition:.35s var(--ease)}
+.dchip:hover{border-color:var(--ink);transform:translateY(-1px)}
+.dchip .cc{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:10px;background:rgba(10,10,10,.06);transition:.35s}
+.dchip.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.dchip.on .cc{background:var(--lime);color:#000}
+.bp{position:relative;--notch:var(--paper);background:#0b0b0b;color:var(--paper);border-radius:18px;padding:clamp(1.4rem,3vw,2rem);overflow:hidden}
+.bp::before,.bp::after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--notch);top:66%;transform:translateY(-50%)}
+.bp::before{left:-11px}.bp::after{right:-11px}
+.bp .dash{position:absolute;left:1.5rem;right:1.5rem;top:66%;border-top:1px dashed rgba(255,255,255,.18)}
+.barcode{width:130px;height:36px;background:repeating-linear-gradient(90deg,currentColor 0 2px,transparent 2px 4px,currentColor 4px 5px,transparent 5px 9px);opacity:.55}
+.sch-row{display:grid;grid-template-columns:auto 1.2fr 1.4fr auto;gap:1.2rem;align-items:center;padding:1.1rem .8rem;border-bottom:1px solid var(--lineD);border-radius:12px;transition:.4s;animation:rin .6s both}
+.sch-row:hover{background:rgba(255,255,255,.04)}
+.sch-row .logo{width:46px;height:46px;border-radius:14px;border:1px solid var(--lineD);display:grid;place-items:center;font-size:11px;transition:.4s}
+.sch-row:hover .logo{background:var(--lime);color:#000;border-color:var(--lime)}
+@media(max-width:767px){.sch-row{grid-template-columns:auto 1fr auto}.sch-row .meta{display:none}}
+.gate{position:relative;overflow:hidden;background:var(--lime);color:var(--ink)}
+.gate .ghost{position:absolute;font-size:clamp(8rem,22vw,20rem);line-height:.7;font-weight:300;letter-spacing:-.06em;color:rgba(10,10,10,.06);pointer-events:none;user-select:none}
+.stamp{width:112px;height:112px;border:1.5px dashed rgba(10,10,10,.35);border-radius:50%;display:grid;place-items:center;text-align:center;font-size:8px;line-height:1.35;letter-spacing:.18em;text-transform:uppercase;animation:spin 26s linear infinite;color:rgba(10,10,10,.6)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.float{animation:floaty 8s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.rz-acc{display:flex;flex-direction:column;gap:12px}
+.rz-pc{position:relative;flex:none;height:78px;border-radius:18px;overflow:hidden;cursor:pointer;background:#0e0e0e;color:#fff;transition:height .8s var(--ease);outline:none}
+.rz-pc.on{height:460px;cursor:default}
+.rz-pc:focus-visible{box-shadow:0 0 0 3px var(--lime)}
+.rz-pbg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.2s var(--ease)}
+.rz-pc:not(.on):hover .rz-pbg{transform:scale(1.06)}
+.rz-ov{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.28),rgba(0,0,0,.55));transition:opacity .6s}
+.rz-pc.on .rz-ov{background:linear-gradient(to top,rgba(0,0,0,.35),rgba(0,0,0,0) 55%)}
+.rz-num{position:absolute;top:16px;left:18px;font-size:11px;opacity:.85;transition:opacity .4s}
+.rz-vt{position:absolute;left:64px;top:50%;transform:translateY(-50%);font-size:17px;font-weight:500;white-space:nowrap;transition:opacity .4s}
+.rz-pl{position:absolute;right:16px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.18);backdrop-filter:blur(8px);display:grid;place-items:center;transition:opacity .4s,background .3s}
+.rz-pc:not(.on):hover .rz-pl{background:var(--lime);color:#000}
+.rz-pc.on .rz-vt,.rz-pc.on .rz-pl,.rz-pc.on .rz-num{opacity:0;pointer-events:none}
+.rz-pn{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .5s}
+.rz-pc.on .rz-pn{opacity:1;pointer-events:auto;transition:opacity .7s .35s}
+.rz-pn .rz-badge,.rz-pn .rz-glass{transform:translateY(16px);opacity:0;transition:transform .8s var(--ease) .4s,opacity .8s .4s}
+.rz-pc.on .rz-pn .rz-badge,.rz-pc.on .rz-pn .rz-glass{transform:none;opacity:1}
+@media(min-width:768px){
+ .rz-acc{flex-direction:row;height:480px;gap:14px}
+ .rz-pc{height:100%;flex:1 1 0;min-width:0;transition:flex .85s var(--ease),height .8s var(--ease)}
+ .rz-pc.on{height:100%;flex:6.2 1 0}
+ .rz-vt{left:50%;top:auto;bottom:70px;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font-size:19px}
+ .rz-pl{right:auto;left:50%;top:auto;bottom:18px;transform:translateX(-50%)}
+}
+.mag{will-change:transform}
+@media(prefers-reduced-motion:reduce){.float,.stamp{display:none;animation:none!important}.step{position:relative;top:auto}}
+</style>
+<svg style="display:none">
+<symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="msg" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="M11.5 2.3a.53.53 0 0 1 .95 0l2.31 4.68a2.12 2.12 0 0 0 1.6 1.16l5.16.75a.53.53 0 0 1 .3.9l-3.74 3.64a2.12 2.12 0 0 0-.61 1.88l.88 5.14a.53.53 0 0 1-.77.56l-4.62-2.43a2.12 2.12 0 0 0-1.97 0L6.4 21a.53.53 0 0 1-.77-.56l.88-5.14a2.12 2.12 0 0 0-.61-1.88L2.16 9.8a.53.53 0 0 1 .3-.9l5.16-.75a2.12 2.12 0 0 0 1.6-1.16z"/></symbol>
+<symbol id="plus" viewBox="0 0 24 24"><path d="M5 12h14M12 5v14"/></symbol>
+<symbol id="cl" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="cr" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+<symbol id="send" viewBox="0 0 24 24"><path d="M14.54 21.69a.5.5 0 0 0 .94-.02l6.5-19a.5.5 0 0 0-.63-.63l-19 6.5a.5.5 0 0 0-.03.94l7.93 3.18a2 2 0 0 1 1.11 1.1z"/><path d="m21.85 2.15-10.94 10.94"/></symbol>
+<symbol id="ref" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8M21 3v5h-5M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16M8 16H3v5"/></symbol>
+<symbol id="home" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .7-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="bus" viewBox="0 0 24 24"><path d="M8 6v6M15 6v6M2 12h19.6M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3M9 18h5"/><circle cx="7" cy="18" r="2"/><circle cx="16" cy="18" r="2"/></symbol>
+<symbol id="food" viewBox="0 0 24 24"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M20 10c0 5-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 15 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="dl" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+<symbol id="land" viewBox="0 0 24 24"><path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2 3 7h18Z"/></symbol>
+<symbol id="uc" viewBox="0 0 24 24"><path d="m16 11 2 2 4-4M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="tu" viewBox="0 0 24 24"><path d="M16 7h6v6M22 7l-8.5 8.5-5-5L2 17"/></symbol>
+<symbol id="cap" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></symbol>
+<symbol id="brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></symbol>
+<symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+<symbol id="build" viewBox="0 0 24 24"><path d="M2 22h20"/><path d="M6 22V8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v14"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+<symbol id="ticket" viewBox="0 0 24 24"><path d="M2 9a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3z"/><path d="M12 6v12"/><path d="M2 12h20"/></symbol>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+<symbol id="upr" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7v10"/></symbol>
+</svg>
+
+<div id="bar" class="fixed top-0 left-0 h-[3px] bg-lime z-[60] w-0"></div>
+
+<!-- NAV -->
+<header id="hd" class="fixed top-0 inset-x-0 z-50 transition-all duration-500">
+ <div class="max-w-[1400px] mx-auto px-4 md:px-8 pt-3 md:pt-4">
+  <div id="hbar" class="relative flex items-center justify-between gap-3 rounded-full border border-white/10 bg-black/35 backdrop-blur-xl px-3 py-2.5 md:px-4">
+   <a href="#top" class="flex items-center gap-2.5 text-[21px] font-medium tracking-tight pl-1"><img src="images/Logo.png" alt="Razcom" class="h-10 md:h-11 w-auto object-contain"></a>
+   <nav id="nv" class="hidden lg:flex items-center gap-1 text-[13px] absolute left-1/2 -translate-x-1/2">
+    <a href="#top" class="nlink px-5 py-2 rounded-full bg-white/10">Accueil</a><a href="#services" class="nlink px-5 py-2 rounded-full transition hover:bg-white/[.07]">Services</a><a href="#methode" class="nlink px-5 py-2 rounded-full transition hover:bg-white/[.07]">Méthode</a><a href="#destinations" class="nlink px-5 py-2 rounded-full transition hover:bg-white/[.07]">Destinations</a><a href="#partenaires" class="nlink px-5 py-2 rounded-full transition hover:bg-white/[.07]">Partenaires</a><a href="#contact" class="nlink px-5 py-2 rounded-full transition hover:bg-white/[.07]">Contact</a>
+   </nav>
+   <div class="flex items-center gap-2.5">
+
+    <a href="#contact" class="btn bl mag hidden sm:inline-flex !py-2.5 !px-4">Démarrer mon projet</a>
+    <button id="mb" class="lg:hidden w-10 h-10 flex items-center justify-center text-[20px]" aria-label="Menu"><i data-i="menu"></i></button>
+   </div>
+  </div>
+ </div>
+</header>
+<div id="mm" class="fixed inset-0 z-[55] bg-black text-white flex flex-col justify-center px-8 gap-5 text-[34px] font-light opacity-0 pointer-events-none transition-opacity duration-500">
+ <button id="mx" class="absolute top-5 right-5 w-10 h-10 text-[22px]" aria-label="Fermer"><i data-i="x"></i></button>
+ <a href="#services" class="transition hover:text-lime">Services</a><a href="#methode" class="transition hover:text-lime">Méthode</a><a href="#destinations" class="transition hover:text-lime">Destinations</a><a href="#partenaires" class="transition hover:text-lime">Partenaires</a><a href="#faq" class="transition hover:text-lime">FAQ</a><a href="#contact" class="transition hover:text-lime">Contact</a>
+ <p class="absolute bottom-8 left-8 text-[11px] tracking-[.25em] text-white/35 uppercase">Razcom · Votre envol vers l'Europe</p>
+</div>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[100svh] overflow-hidden flex">
+ <div id="strip" class="absolute inset-y-0 right-0 left-0 md:left-[38%] flex gap-4 overflow-x-auto nsb select-none">
+  <!-- Images du hero : remplacez les URL ci-dessous -->
+  <div class="relative shrink-0 min-w-[300px] md:min-w-[380px] h-full bi" style="background-image:url('https://i.pinimg.com/736x/79/d8/d9/79d8d9c9413cca94292d6f0597618d6a.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Paris</p><p class="text-[12px] text-white/70">France</p></div></div>
+  <div class="relative shrink-0 min-w-[260px] md:min-w-[320px] h-full bi" style="background-image:url('https://i.pinimg.com/736x/e7/c2/07/e7c2070b1593a6bebee5f9196d5581d4.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Madrid</p><p class="text-[12px] text-white/70">Espagne</p></div></div>
+  <div class="relative shrink-0 min-w-[260px] md:min-w-[320px] h-full bi" style="background-image:url('https://i.pinimg.com/736x/d2/83/41/d283416b76fb62a37902413a687fe232.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Berlin</p><p class="text-[12px] text-white/70">Allemagne</p></div></div>
+  <div class="relative shrink-0 min-w-[260px] md:min-w-[320px] h-full bi" style="background-image:url('https://i.pinimg.com/1200x/89/4a/17/894a173d319d54e832c7f1f9dc0f90c7.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Lisbonne</p><p class="text-[12px] text-white/70">Portugal</p></div></div>
+  <div class="relative shrink-0 min-w-[260px] md:min-w-[320px] h-full bi" style="background-image:url('https://i.pinimg.com/736x/af/f1/9c/aff19cc98fb9a5dae4aa1893bd0e8e98.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Bruxelles</p><p class="text-[12px] text-white/70">Belgique</p></div></div>
+ </div>
+ <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
+ <div class="absolute inset-0 md:w-[62%] bg-gradient-to-r from-black via-black/75 md:via-black/45 to-transparent pointer-events-none"></div>
+ <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#050505] to-transparent pointer-events-none"></div>
+ <div class="relative z-10 w-full max-w-[1400px] mx-auto px-5 md:px-10 pt-36 pb-32 self-center pointer-events-none">
+  <h1 data-split class="text-[54px] sm:text-[68px] md:text-[84px] font-light leading-[1.02] tracking-[-.025em]">Votre envol<br>vers l'Europe</h1>
+  <p class="rv mt-7 max-w-[400px] text-[15px] leading-relaxed text-white/75" style="--d:4">Études, expatriation, affaires ou tourisme — Razcom transforme votre projet en réalité, avec une expertise consulaire et un accompagnement humain à chaque étape.</p>
+  <div class="rv mt-8 flex flex-wrap gap-3 pointer-events-auto" style="--d:5"><a href="#contact" class="btn bl">Démarrer mon projet <i data-i="arr"></i></a><a href="#services" class="btn bg">Découvrir nos services</a></div>
+  <div class="rv mt-10 flex items-center gap-4 text-[13px]" style="--d:6"><div class="flex -space-x-2" id="av"></div><div><div class="flex gap-0.5 text-lime"><i data-i="star" class="f"></i><i data-i="star" class="f"></i><i data-i="star" class="f"></i><i data-i="star" class="f"></i><i data-i="star" class="f"></i></div><p class="mt-1 text-white/80"><b class="font-medium text-white">+100 clients accompagnés</b> &nbsp;4.9/5, 98 % de satisfaction</p></div></div>
+ </div>
+ <div class="hidden md:flex absolute bottom-10 right-10 z-10 gap-3 text-[13px]">
+  <div class="rv flex items-center gap-3 rounded-2xl bg-black/55 backdrop-blur-xl border border-white/10 px-4 py-3" style="--d:7"><span class="w-9 h-9 rounded-full bg-lime text-black flex items-center justify-center"><i data-i="shield"></i></span><span><b class="font-medium">Visa obtenu</b><br><span class="text-white/60">Dès le 1ᵉʳ dépôt</span></span></div>
+  <div class="rv flex items-center gap-3 rounded-2xl bg-black/55 backdrop-blur-xl border border-white/10 px-4 py-3" style="--d:8"><span class="w-9 h-9 rounded-full bg-white/15 flex items-center justify-center"><i data-i="plane"></i></span><span><b class="font-medium">Cotonou → Paris</b><br><span class="text-white/60">Départ confirmé</span></span></div>
+ </div>
+</section>
+
+<!-- TICKER DESTINATIONS -->
+<section class="dark border-y border-white/10 overflow-hidden"><div class="mq py-3.5" id="mqC"></div></section>
+
+<!-- MANIFESTE -->
+<section class="paper pb-24 md:pb-32 overflow-hidden">
+ <div class="wrapx grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+  <div class="lg:col-span-8">
+   <p class="rv kicker">Le manifeste</p>
+   <h2 data-split class="display mt-6">On ne vend pas des billets.</h2>
+   <p class="rv outline display mt-1" style="--d:2">On prépare des départs.</p>
+   <p class="rv lead mt-8" style="--d:3">Razcom n'est pas une agence de plus. C'est un carnet de vol : chaque projet y est consigné, chaque étape validée, chaque départ préparé avec la rigueur d'un équipage et la chaleur d'un proche.</p>
+   <div class="rv mt-8 flex flex-wrap gap-3" style="--d:4"><a href="#methode" class="btn bk mag">Découvrir la méthode <i data-i="arr"></i></a><a href="#contact" class="btn !bg-black/[.04] !text-black hover:!bg-black/10 border border-black/15">Prendre rendez-vous</a></div>
+  </div>
+  <div class="lg:col-span-4 flex flex-col gap-8 lg:pt-6">
+   <div class="rv flex items-center justify-center lg:justify-start" style="--d:2"><div class="stamp"><span>Razcom<br>·<br>Départ<br>confirmé<br>·</span></div></div>
+   <div class="rv border-t border-black/15 pt-5" style="--d:3"><p class="text-[10px] uppercase tracking-[.24em] opacity-45">Depuis</p><p class="mt-2 text-[15px] leading-relaxed">Cotonou · Paris · Madrid<br><span class="opacity-55">Et partout où vos projets nous appellent.</span></p></div>
+   <div class="rv border-t border-black/15 pt-5" style="--d:4"><p class="text-[10px] uppercase tracking-[.24em] opacity-45">Engagement</p><p class="mt-2 text-[15px] leading-relaxed">Un conseiller dédié, un dossier rigoureux, zéro fausse promesse.</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- SERVICES (CARROUSEL AVEC IMAGES) -->
+<section id="services" class="dark sec overflow-hidden">
+ <div class="glow w-[520px] h-[520px] -top-40 -right-40 opacity-70"></div>
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[1fr_.8fr] gap-8 items-end">
+   <div><p class="rv kicker">01 · Nos services</p><h2 data-split class="h2 mt-5">Des solutions<br>sur mesure</h2></div>
+   <div class="rv flex flex-wrap lg:justify-end items-center gap-4" style="--d:2">
+    <p class="lead max-w-xs">De l'orientation à l'installation, nous couvrons chaque étape de votre mobilité vers l'Europe avec rigueur et humanité.</p>
+    <div class="flex gap-2 shrink-0">
+     <button onclick="svcStor.scrollBy(-360,0)" class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center transition hover:bg-lime hover:text-black hover:border-lime" aria-label="Précédent"><i data-i="cl"></i></button>
+     <button onclick="svcStor.scrollBy(360,0)" class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center transition hover:bg-lime hover:text-black hover:border-lime" aria-label="Suivant"><i data-i="cr"></i></button>
+    </div>
+   </div>
+  </div>
+  <div class="mt-12">
+   <div id="svcStor" class="flex gap-4 overflow-x-auto nsb snap-x snap-mandatory pb-2"></div>
+  </div>
+ </div>
+</section>
+
+<!-- CHIFFRES -->
+<section class="dark py-20 md:py-28 overflow-hidden">
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-12 lg:gap-16 items-center">
+   <div>
+    <p class="rv kicker tx-lime">02 · Résultats</p>
+    <h2 data-split class="h2 mt-5">Des chiffres<br>qui décollent</h2>
+    <p class="rv lead mt-5">Depuis Paris et Madrid, nous transformons chaque année les projets de centaines d'Africains en départs réussis.</p>
+    <a href="#contact" class="rv btn bl mag mt-7" style="--d:2">Parler à un conseiller <i data-i="arr"></i></a>
+   </div>
+   <div id="num" class="grid grid-cols-2 gap-x-8 gap-y-10"></div>
+  </div>
+ </div>
+</section>
+
+<!-- PARCOURS -->
+<section id="parcours" class="paper sec overflow-hidden">
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[1.15fr_.85fr] gap-8 items-end">
+   <div>
+    <p class="rv kicker">03 · Votre parcours en Europe</p>
+    <h2 class="rv h2 mt-5 max-w-[14ch]">De votre première idée à votre nouvelle vie.</h2>
+   </div>
+   <div class="rv flex flex-col items-start gap-6">
+    <p class="text-[14.5px] leading-relaxed text-black/65 max-w-md">Six grandes étapes, balisées et suivies par un conseiller dédié : cliquez sur une image pour découvrir le contenu de chaque escale.</p>
+    <a href="#contact" class="btn bk mag">Parler à un conseiller <i data-i="arr"></i></a>
+   </div>
+  </div>
+  <div id="parcours-acc" class="rz-acc rv mt-12" role="list"></div>
+ </div>
+</section>
+
+<script>
+const PARCOURS_STEPS=[
+ ["Définir votre projet","Études, tourisme, affaires ou expatriation.","Nous cernons vos objectifs, votre calendrier et vos priorités pour poser des bases claires dès le premier échange.",["Objectifs","Calendrier","Budget"],"https://i.pinimg.com/1200x/60/7b/77/607b7715e8ed6def6e52306a15a6cdf1.jpg"],
+ ["Choisir votre destination","Découvrir les possibilités selon votre profil.","Pays, programmes et délais : nous comparons avec vous les options réalistes et les plus adaptées à votre situation.",["Pays","Programmes","Délais"],"https://i.pinimg.com/736x/73/95/44/739544b3268ef598c247956010e6fdcb.jpg"],
+ ["Préparer votre dossier","Rassembler et vérifier les documents.","Chaque pièce est listée, rassemblée puis contrôlée avec rigueur avant tout dépôt auprès des autorités.",["Passeport","Justificatifs","Vérification"],"https://imgs.search.brave.com/G0GAV5YwaCy5CjWCXKvuh9xOwqKXTZYPzBX6-UWIkq0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMud2l4c3RhdGlj/LmNvbS9tZWRpYS8x/MDhmZjRfZjAyMTQ0/Y2EyMTM0NDE5OTlj/NTllOGQzZjkxMzNh/ZGZ-bXYyLmpwZy92/MS9maWxsL3dfOTgw/LGhfNTc3LGFsX2Ms/cV84NSx1c21fMC42/Nl8xLjAwXzAuMDEs/ZW5jX2F2aWYscXVh/bGl0eV9hdXRvLzEw/OGZmNF9mMDIxNDRj/YTIxMzQ0MTk5OWM1/OWU4ZDNmOTEzM2Fk/Zn5tdjIuanBn"],
+ ["Effectuer les démarches","Accompagnement dans les formalités.","Rendez-vous, dépôt et suivi : nous vous guidons dans les formalités jusqu'à la décision.",["Consulat","Dépôt","Suivi"],"https://imgs.search.brave.com/AtvW4hbyDzYhpwtvxsim3J171BKM2C7npmDWijTnvBg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/bWEtZ3JhbmRlLXRh/aWxsZS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjMvMDMv/ZGVtYXJjaGVzLWFk/bWluaXN0cmF0aXZl/cy12b3lhZ2UtYS1s/ZXRyYW5nZXIuanBn"],
+ ["Préparer votre départ","Billet, logement et organisation.","Réservation du billet, recherche de logement et préparatifs pratiques pour partir l'esprit tranquille.",["Billet","Logement","Assurance"],"https://imgs.search.brave.com/B2vPJiYVZS2vRf_wut8qCgMQgk56HfiGdE_asHumcqg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/MTIzbG9nZXIuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDI2/LzA1L2VmNzIzODhm/MWZiOWYzYzBlOGI4/MDc5YTkzZjZlNTAx/XzFfMTc3OTQzMjIy/OV8yNjU5LmpwZw"],
+ ["Commencer votre nouvelle vie","Arrivée et installation.","Nous restons à vos côtés à l'arrivée pour faciliter votre installation et vos premières démarches sur place.",["Arrivée","Installation","Suivi"],"https://i.pinimg.com/736x/69/4b/0b/694b0bf5f568a36fb984ba17e62866e3.jpg"]
+];
+const parcoursAcc=document.getElementById('parcours-acc');
+parcoursAcc.innerHTML=PARCOURS_STEPS.map((s,i)=>{const n=String(i+1).padStart(2,'0');return `
+<article class="rz-pc ${i===0?'on':''}" role="listitem" tabindex="0" aria-expanded="${i===0}" aria-label="${s[0]}" data-i="${i}">
+ <div class="rz-pbg" style="background-image:url('${s[4]}')"></div>
+ <div class="rz-ov"></div>
+ <span class="rz-num">${n}</span>
+ <span class="rz-vt">${s[0]}</span>
+ <span class="rz-pl"><i data-i="plus"></i></span>
+ <div class="rz-pn">
+  <span class="rz-badge absolute top-5 left-5 rounded-full bg-white/90 text-black px-3 py-1.5 text-[11px] font-medium">${n} · <span>Étape</span></span>
+  <div class="rz-glass absolute left-4 right-4 bottom-4 md:left-6 md:bottom-6 md:right-auto md:max-w-[340px] rounded-2xl bg-white/85 backdrop-blur-xl text-black p-5 md:p-6 shadow-2xl">
+   <p class="text-[10px] uppercase tracking-[.2em] text-black/45">Étape <span>${n}</span> / 06</p>
+   <h3 class="text-[26px] md:text-[30px] font-light tracking-tight leading-tight mt-2">${s[0]}</h3>
+   <p class="text-[13px] text-black/55 mt-1">${s[1]}</p>
+   <p class="text-[13px] leading-relaxed text-black/75 mt-3">${s[2]}</p>
+   <div class="flex flex-wrap gap-2 mt-4">${s[3].map(t=>`<span class="rounded-full bg-black/[.06] px-3 py-1 text-[11px]">${t}</span>`).join('')}</div>
+  </div>
+ </div>
+</article>`}).join('');
+
+function openStep(el){
+ parcoursAcc.querySelectorAll('.rz-pc').forEach(c=>{const on=c===el;c.classList.toggle('on',on);c.setAttribute('aria-expanded',on)});
+ if(innerWidth<768)setTimeout(()=>{const r=el.getBoundingClientRect();if(r.top<70||r.bottom>innerHeight)scrollBy({top:r.top-90,behavior:'smooth'})},120);
+}
+parcoursAcc.addEventListener('click',e=>{const c=e.target.closest('.rz-pc');if(c&&!c.classList.contains('on'))openStep(c)});
+parcoursAcc.addEventListener('keydown',e=>{const c=e.target.closest('.rz-pc');if(!c)return;
+ if(e.key==='Enter'||e.key===' '){e.preventDefault();openStep(c)}
+ const k=[...parcoursAcc.children],i=k.indexOf(c);
+ if(e.key==='ArrowRight'||e.key==='ArrowDown'){e.preventDefault();k[Math.min(i+1,k.length-1)].focus()}
+ if(e.key==='ArrowLeft'||e.key==='ArrowUp'){e.preventDefault();k[Math.max(i-1,0)].focus()}});
+</script>
+
+<!-- METHODE (IMAGES DYNAMIQUES AU SCROLL) -->
+<section id="methode" class="paper sec">
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[1fr_.85fr] gap-8 items-end">
+   <div><p class="rv kicker">04 · Notre méthode</p><h2 data-split class="h2 mt-5">Quatre escales<br>vers le départ</h2></div>
+   <p class="rv lead lg:pb-1" style="--d:2">De la première prise de contact à votre envol, chaque étape est balisée, expliquée et suivie par un conseiller dédié.</p>
+  </div>
+  <div class="mt-14 grid lg:grid-cols-[.85fr_1.15fr] gap-10 lg:gap-16 items-start">
+   <!-- Images de la méthode : remplacez les src ci-dessous -->
+   <div class="relative aspect-[4/5] max-h-[38vh] lg:max-h-none" id="methode-media">
+    <div class="absolute inset-0 z-20 rounded-[18px] overflow-hidden bg-black" id="methode-img-container">
+     <img class="methode-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-100" src="https://i.pinimg.com/736x/e1/f6/1a/e1f61a30a7353e77708dbaba8cfab8d6.jpg" alt="Prise de contact" loading="lazy" decoding="async">
+     <img class="methode-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0" src="https://i.pinimg.com/1200x/bc/69/05/bc69052fb0b47861c64604501a87715f.jpg" alt="Analyse du profil" loading="lazy" decoding="async">
+     <img class="methode-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0" src="https://i.pinimg.com/736x/fb/47/61/fb476157e05c9b84d0356b613a2e2826.jpg" alt="Montage du dossier" loading="lazy" decoding="async">
+     <img class="methode-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0" src="https://i.pinimg.com/736x/62/58/c3/6258c38f15bfa95157d7b4bc377c557f.jpg" alt="Suivi et réussite" loading="lazy" decoding="async">
+
+     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none"></div>
+     <span class="absolute top-5 left-5 rounded-full bg-black/50 backdrop-blur border border-white/15 px-3.5 py-1.5 text-[11px] text-white/80 flex items-center gap-2 z-10"><span class="w-1.5 h-1.5 rounded-full bg-lime"></span>Conseillère Razcom</span>
+     <div class="absolute left-6 bottom-6 text-white z-10"><p class="text-[52px] font-light leading-none tracking-tight">98<span class="text-[22px] align-top">%</span></p><p class="text-[13px] text-white/75 mt-2">Clients satisfaits</p></div>
+     <div class="absolute right-6 bottom-6 text-right text-[12px] text-white/80 z-10"><p class="flex items-center gap-1.5 justify-end text-lime"><i data-i="shield"></i>Visa dès le 1ᵉʳ dépôt</p></div>
+    </div>
+   </div>
+   <div id="tl"></div>
+  </div>
+ </div>
+</section>
+
+<!-- POURQUOI -->
+<section class="dark sec overflow-hidden relative z-30">
+ <div class="glow w-[460px] h-[460px] bottom-0 -left-40 opacity-60"></div>
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[.8fr_1.2fr] gap-10 lg:gap-16">
+   <div class="lg:sticky lg:top-28 self-start">
+    <p class="rv kicker tx-lime">05 · Pourquoi Razcom</p>
+    <h2 data-split class="h2 mt-5">Votre succès est<br>notre engagement</h2>
+    <p class="rv lead mt-5">Avec Razcom, vous ne partez pas seul : vous partez préparé, entouré d'experts dédiés à votre réussite.</p>
+    <a href="#methode" class="rv mt-6 inline-flex items-center gap-2 text-[11px] uppercase tracking-[.18em] tx-lime group" style="--d:3">Découvrir la méthode <i data-i="arr" class="transition-transform group-hover:translate-x-1"></i></a>
+   </div>
+   <div id="why"></div>
+  </div>
+ </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations" class="paper sec overflow-hidden">
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[1fr_.8fr] gap-8 items-end">
+   <div><p class="rv kicker">06 · Explorez</p><h2 data-split class="h2 mt-5">Quelle destination<br>pour vous ?</h2></div>
+   <p class="rv lead lg:pb-1" style="--d:2">Parcourez nos destinations phares ou sélectionnez-en deux pour ouvrir leur carnet de vol et comparer les délais côte à côte.</p>
+  </div>
+  <div id="dest" class="rv mt-9 flex flex-wrap gap-2" style="--d:2"></div>
+  <div id="cmp" class="mt-8 grid md:grid-cols-2 gap-4 min-h-[250px]"></div>
+ </div>
+</section>
+
+<!-- PARTENAIRES -->
+<section id="partenaires" class="dark sec overflow-hidden">
+ <div class="wrapx">
+  <div class="grid lg:grid-cols-[1fr_.8fr] gap-8 items-end">
+   <div><p class="rv kicker tx-lime">07 · Nos partenaires</p><h2 data-split class="h2 mt-5">Écoles et centres<br>partenaires</h2></div>
+   <p class="rv lead lg:pb-1" style="--d:2">Nous travaillons main dans la main avec des établissements reconnus en Espagne. Téléchargez leur brochure pour découvrir programmes, coûts et conditions d'admission.</p>
+  </div>
+  <div class="rv mt-12 grid lg:grid-cols-[1.05fr_.95fr] rounded-[18px] overflow-hidden bg-[#0e0e0e] border border-white/10" style="--d:2">
+   <div class="relative min-h-[320px] overflow-hidden">
+    <div class="absolute inset-0 bi" data-parallax=".08" style="background-image:url('https://i.pinimg.com/736x/b1/0c/52/b10c5236f35cc562a79c3a95af8e771c.jpg')"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
+    <span class="absolute top-5 left-5 bg-black/60 backdrop-blur rounded-full px-4 py-1.5 text-[12px] flex items-center gap-2 border border-white/10"><i data-i="pin"></i>Espagne</span>
+    <div class="absolute bottom-6 left-6"><p class="text-[10px] uppercase tracking-[.24em] tx-lime">Programme phare</p><p class="text-[26px] font-light mt-2 leading-tight">Votre avenir<br>commence ici</p></div>
+   </div>
+   <div class="p-8 md:p-12 flex flex-col justify-center">
+    <p class="tx-lime text-[12px] uppercase tracking-[.2em]">Programme phare</p><h3 class="text-[28px] md:text-[36px] font-light leading-[1.08] mt-2">Construisez votre avenir en Espagne</h3>
+    <ul class="mt-7 space-y-3.5 text-[14px] text-white/75"><li class="flex gap-3"><i data-i="check" class="tx-lime mt-0.5"></i>Stages en entreprises et multinationales</li><li class="flex gap-3"><i data-i="check" class="tx-lime mt-0.5"></i>Formations diplômantes et qualifiantes</li><li class="flex gap-3"><i data-i="check" class="tx-lime mt-0.5"></i>Cours de langue intensifs</li><li class="flex gap-3"><i data-i="check" class="tx-lime mt-0.5"></i>Présentiel ou en ligne</li></ul>
+    <a href="tel:+34632344243" class="mt-9 inline-flex items-center gap-3 text-[15px] group"><span class="w-11 h-11 rounded-full bg-lime text-black flex items-center justify-center transition group-hover:scale-105"><i data-i="phone"></i></span><span><span class="block text-white/50 text-[12px]">Pour plus d'infos</span>+34 632 34 42 43</span></a>
+   </div>
+  </div>
+  <div id="tabs" class="mt-14 flex flex-wrap gap-2"></div>
+  <div id="schools" class="mt-6 border-t border-white/10"></div>
+  <p class="mt-8 flex items-center justify-center gap-2 text-[12px] text-white/50"><i data-i="dl"></i>Brochure générale disponible : FOLLETO_GUAY_SPANISH_SCHOOL_ES_EN.pdf (Español / English)</p>
+ </div>
+</section>
+
+<!-- TEMOIGNAGES -->
+<section class="paper sec overflow-hidden">
+ <div class="wrapx">
+  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+   <div><p class="rv kicker">08 · Ils l'ont vécu</p><h2 data-split class="h2 mt-5">Ce que disent<br>nos clients</h2></div>
+   <div class="rv flex gap-2 md:pb-1" style="--d:2"><button onclick="tem.scrollBy(-360,0)" class="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center transition hover:bg-black hover:text-white" aria-label="Précédent"><i data-i="cl"></i></button><button onclick="tem.scrollBy(360,0)" class="w-12 h-12 rounded-full border border-black/20 flex items-center justify-center transition hover:bg-black hover:text-white" aria-label="Suivant"><i data-i="cr"></i></button></div>
+  </div>
+  <div class="relative mt-12"><div id="tem" class="flex gap-4 overflow-x-auto nsb snap-x snap-mandatory pb-2"></div></div>
+ </div>
+</section>
+
+<!-- STORIES -->
+<section class="dark sec text-center overflow-hidden">
+ <div class="glow w-[600px] h-[300px] left-1/2 -translate-x-1/2 top-1/2 opacity-40"></div>
+ <div class="wrapx relative">
+  <p class="rv kicker justify-center">09 · Leur parcours</p>
+  <h2 data-split class="h2 mt-5">Suivez leurs stories</h2>
+  <p class="rv lead mt-4 mx-auto" style="--d:2">Des visages, des parcours et des départs réussis à travers l'Europe.</p>
+  <div id="sto" class="mt-14 flex justify-center gap-8 md:gap-14 flex-wrap"></div>
+ </div>
+</section>
+<div id="sv" class="fixed inset-0 z-[70] bg-black/90 backdrop-blur flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
+ <div class="relative w-[min(92vw,380px)] aspect-[9/16] max-h-[88vh] rounded-[28px] overflow-hidden bi ring-1 ring-white/15" id="svc">
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/40"></div>
+  <div class="absolute top-4 inset-x-4 h-[3px] bg-white/25 rounded overflow-hidden"><div id="svp" class="h-full bg-lime origin-left"></div></div>
+  <button id="svx" class="absolute top-8 right-4 text-[22px]" aria-label="Fermer"><i data-i="x"></i></button>
+  <div class="absolute bottom-0 p-7"><p id="svn" class="text-[24px] font-light"></p><p id="svl" class="text-[13px] tx-lime mt-1"></p><p id="svt" class="mt-4 text-[15px] leading-relaxed text-white/90"></p></div>
+  <button id="svb" class="absolute inset-y-0 left-0 w-1/3" aria-label="Précédent"></button><button id="svf" class="absolute inset-y-0 right-1/3 w-1/3" aria-label="Suivant"></button>
+ </div>
+</div>
+
+<!-- CTA -->
+<section class="gate py-20 md:py-28 overflow-hidden">
+ <div class="ghost absolute -top-6 left-1/2 -translate-x-1/2 select-none">DÉPART</div>
+ <div class="wrapx relative text-center">
+  <p class="relative text-[10px] uppercase tracking-[.3em] opacity-50">Prêt au départ ?</p>
+  <h2 data-split class="relative display mt-5">Embarquement<br>immédiat.</h2>
+  <p class="rv relative mt-6 text-[15px] opacity-65 max-w-md mx-auto" style="--d:2">Réservez votre consultation dès aujourd'hui et transformez votre projet en réalité. Sans engagement.</p>
+  <div class="rv relative mt-9 flex gap-3 justify-center flex-wrap" style="--d:3"><a href="#contact" class="btn bk mag">Réserver une séance <i data-i="arr"></i></a><a href="#services" class="btn !bg-black/[.08] !text-black hover:!bg-black/15 border border-black/15">Voir les services</a></div>
+  <div class="rv relative mt-12 flex flex-wrap justify-center gap-x-10 gap-y-3 text-[9px] uppercase tracking-[.24em] opacity-55" style="--d:4"><span>Porte · A24</span><span>Classe · Ambition</span><span>Statut · Confirmé</span></div>
+ </div>
+</section>
+
+<!-- QUIZ + BUDGET -->
+<section class="paper py-20 md:py-28 overflow-hidden">
+ <div class="wrapx grid lg:grid-cols-2 gap-4">
+  <div class="rv spot relative overflow-hidden rounded-[18px] bg-[#0e0e0e] text-white border border-white/10 p-8 md:p-11">
+   <div class="glow w-52 h-52 -top-16 -right-16 opacity-70"></div>
+   <p class="text-[10px] uppercase tracking-[.24em] text-white/45">Pas sûr par où commencer ?</p><h3 class="text-[26px] md:text-[32px] font-light leading-tight mt-2">Trouvez votre voie en 30 secondes</h3>
+   <div id="quiz" class="mt-8 relative min-h-[300px]"></div>
+  </div>
+  <div class="rv rounded-[18px] bg-white text-black p-8 md:p-11 shadow-[0_30px_80px_-40px_rgba(0,0,0,.35)]" style="--d:2">
+   <p class="text-[10px] uppercase tracking-[.24em] text-black/45">Estimation</p><h3 class="text-[26px] md:text-[32px] font-light leading-tight mt-2">Votre budget mensuel estimé</h3>
+   <p class="mt-3 text-[13px] text-black/60">Ajustez les curseurs selon votre style de vie pour estimer votre coût mensuel sur place.</p>
+   <div class="mt-8 space-y-7" id="bud"></div>
+   <div class="mt-9 pt-6 border-t border-black/10 flex items-end justify-between gap-4"><div><p class="text-black/50 text-[13px]">Total estimé / mois</p><p class="text-[48px] font-light leading-none mt-1 tabular-nums" id="tot">835 €</p></div><p class="text-[12px] text-black/50 text-right flex items-center gap-1.5"><i data-i="pin"></i>Coût de vie moyen à Paris, France</p></div>
+  </div>
+ </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="paper pb-28 pt-4 overflow-hidden">
+ <div class="wrapx grid md:grid-cols-[.8fr_1.2fr] gap-10 md:gap-16">
+  <div class="md:sticky md:top-28 self-start">
+   <p class="rv kicker">10 · FAQ</p>
+   <h2 data-split class="h2 mt-5">Questions<br>fréquentes</h2>
+   <p class="rv lead mt-4" style="--d:2">Tout ce que vous voulez savoir avant de partir.</p>
+   <a href="#contact" class="rv mt-6 inline-flex items-center gap-2 text-[11px] uppercase tracking-[.18em] group" style="--d:3">Une autre question ? <i data-i="arr" class="transition-transform group-hover:translate-x-1"></i></a>
+  </div>
+  <div id="fq" class="border-t border-black/15"></div>
+ </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="dark border-t border-white/10 py-28 overflow-hidden">
+ <div class="glow w-[500px] h-[500px] -top-40 left-1/3 opacity-50"></div>
+ <div class="wrapx relative grid lg:grid-cols-[.9fr_1.1fr] gap-12 lg:gap-16">
+  <div>
+   <p class="rv kicker tx-lime">11 · Contact</p>
+   <h2 data-split class="text-[40px] md:text-[58px] font-light leading-[1.0] tracking-[-.035em] mt-4">Parlons de<br>votre projet</h2>
+   <p class="rv mt-6 text-[14px] leading-relaxed text-white/60 max-w-md">Nos conseillers répondent à toutes vos questions et vous orientent vers la meilleure solution.</p>
+   <div class="rv mt-10 space-y-3" style="--d:2">
+    <a href="tel:+34632344243" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.03] p-4 transition hover:border-lime/40 hover:bg-white/[.05]"><span class="w-11 h-11 rounded-full bg-lime text-black flex items-center justify-center"><i data-i="phone"></i></span><span class="flex-1"><span class="block text-[10px] uppercase tracking-[.18em] text-white/40">Téléphone et WhatsApp</span><span class="text-[15px]">+34 632 34 42 43</span></span><i data-i="upr" class="text-white/30 transition group-hover:text-lime"></i></a>
+    <a href="mailto:contact@razcomtravel.com" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.03] p-4 transition hover:border-lime/40 hover:bg-white/[.05]"><span class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center transition group-hover:bg-lime group-hover:text-black"><i data-i="mail"></i></span><span class="flex-1"><span class="block text-[10px] uppercase tracking-[.18em] text-white/40">Email</span><span class="text-[15px]">contact@razcomtravel.com</span></span><i data-i="upr" class="text-white/30 transition group-hover:text-lime"></i></a>
+    <div class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/[.03] p-4"><span class="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center"><i data-i="clock"></i></span><span><span class="block text-[10px] uppercase tracking-[.18em] text-white/40">Horaires</span><span class="text-[15px]">Lun–Ven 9h–18h, Sam 9h–13h</span></span></div>
+   </div>
+  </div>
+  <form id="cf" class="rv relative rounded-[18px] bg-white text-black p-8 md:p-11 space-y-6 shadow-[0_40px_100px_-50px_rgba(0,0,0,.9)]" style="--d:2" novalidate>
+   <h3 class="text-[20px] font-medium">Envoyez-nous un message</h3>
+   <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+   <div class="fl"><input required placeholder=" " id="f1"><label for="f1">Prénom et nom</label></div>
+   <div class="grid sm:grid-cols-2 gap-6"><div class="fl"><input required type="email" placeholder=" " id="f2"><label for="f2">Email</label></div><div class="fl"><input placeholder=" " id="f3"><label for="f3">Téléphone</label></div></div>
+   <div class="fl"><select required id="f4"><option value="" hidden></option><option>Études en Europe</option><option>Voyage d'affaires</option><option>Expatriation</option><option>Tourisme</option><option>Stages pro</option><option>Billetterie</option></select><label for="f4">Type de projet</label></div>
+   <div class="fl"><textarea rows="3" placeholder=" " id="f5"></textarea><label for="f5">Décrivez votre projet, vos questions, votre situation</label></div>
+   <div class="flex items-center gap-4 rounded-xl bg-[#f3f3f1] px-5 py-4 text-[14px]"><i data-i="shield" class="text-[20px]"></i><span class="hidden sm:block">Vérification anti-robot</span><span id="cq" class="ml-auto font-medium"></span><input id="ca" required inputmode="numeric" placeholder="0" class="w-14 text-center bg-white rounded-lg py-2 outline-none focus:ring-2 ring-black"><button type="button" id="cr2" class="text-black/50 hover:text-black transition-transform hover:rotate-180 duration-500" aria-label="Nouveau calcul"><i data-i="ref"></i></button></div>
+   <button id="sb" class="btn bl w-full justify-center !bg-black !text-lime hover:!bg-[#222]"><span id="sbt" class="flex items-center gap-2">Envoyer mon message <i data-i="send"></i></span></button>
+   <p id="cm" class="text-[12px] text-black/50 text-center">Réponse sous 24 h ouvrées. Vos données restent confidentielles.</p>
+  </form>
+ </div>
+</section>
+
+<!-- ENVOL -->
+<section class="dark py-10 overflow-hidden border-y border-white/10"><div class="mq" id="mqS"></div></section>
+
+<!-- FOOTER -->
+<footer class="dark pt-24 pb-8 overflow-hidden">
+ <div class="glow w-[600px] h-[300px] left-1/2 -translate-x-1/2 bottom-0 opacity-30"></div>
+ <div class="wrapx relative grid md:grid-cols-[1.4fr_1fr_1fr_1.4fr] gap-12">
+  <div><a href="#top" class="flex items-center gap-2.5 text-[24px] font-medium"><img src="images/Logo.png" alt="Razcom" class="h-12 w-auto object-contain"></a><p class="mt-4 text-[13px] text-white/60 max-w-xs">Votre partenaire de confiance pour tous vos projets de mobilité vers l'Europe depuis l'Afrique.</p>
+   <div class="flex gap-7 mt-7 text-[12px]"><div><p class="text-white/45">Paris</p><b class="clk text-[20px] font-light" data-tz="Europe/Paris"></b></div><div><p class="text-white/45">Madrid</p><b class="clk text-[20px] font-light" data-tz="Europe/Madrid"></b></div><div><p class="text-white/45">Cotonou</p><b class="clk text-[20px] font-light" data-tz="Africa/Porto-Novo"></b></div></div></div>
+  <ul class="text-[13px] text-white/60 space-y-3"><li class="text-white font-medium">Services</li><li><a class="hover:text-white transition" href="#services">Études en Europe</a></li><li><a class="hover:text-white transition" href="#services">Voyage d'affaires</a></li><li><a class="hover:text-white transition" href="#services">Tourisme</a></li><li><a class="hover:text-white transition" href="#services">Expatriation</a></li><li><a class="hover:text-white transition" href="#services">Billetterie</a></li></ul>
+  <ul class="text-[13px] text-white/60 space-y-3"><li class="text-white font-medium">Agence</li><li><a class="hover:text-white transition" href="#methode">Pourquoi nous</a></li><li><a class="hover:text-white transition" href="#methode">Notre méthode</a></li><li><a class="hover:text-white transition" href="#partenaires">Écoles partenaires</a></li><li><a class="hover:text-white transition" href="#faq">FAQ</a></li><li><a class="hover:text-white transition" href="#contact">Contact</a></li></ul>
+  <div class="text-[13px]"><p class="font-medium">Newsletter</p><p class="text-white/60 mt-3">Nos conseils sur l'immigration et les études en Europe.</p>
+   <form id="nl" class="mt-5 flex items-center rounded-full bg-white/10 pl-5 pr-1.5 py-1.5 transition focus-within:bg-white/15"><input required type="email" placeholder="Votre email" class="flex-1 min-w-0 bg-transparent outline-none text-[13px]"><button class="w-10 h-10 rounded-full bg-lime text-black flex items-center justify-center transition hover:scale-110" aria-label="S'inscrire"><i data-i="arr"></i></button></form></div>
+ </div>
+ <div class="relative overflow-hidden mt-16"><p class="font-medium text-[22vw] leading-[.78] tracking-[-.05em] text-white/[.04] text-center select-none">Razcom</p></div>
+ <div class="wrapx relative pt-6 border-t border-white/10 flex flex-wrap gap-4 justify-between text-[11px] text-white/40"><span>© 2026 Razcom. Tous droits réservés.</span><span class="flex gap-5"><a href="#" class="hover:text-white transition">Mentions légales</a><a href="#" class="hover:text-white transition">Confidentialité</a></span></div>
+</footer>
+
+<!-- CHAT -->
+<div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+ <div id="cp" class="panel opacity-0 scale-90 pointer-events-none w-[290px] rounded-2xl bg-white text-black shadow-2xl p-6 text-[14px]"><div class="flex items-center gap-3"><img src="images/Logo.png" alt="Razcom" class="h-9 w-auto object-contain"></div><p class="mt-4 text-black/70">Besoin d'aide pour votre projet ? Je réponds en quelques minutes.</p><a href="https://wa.me/34632344243" class="btn bk w-full justify-center mt-5 !py-3">Écrire sur WhatsApp <i data-i="arr"></i></a></div>
+ <button id="cbn" class="w-14 h-14 rounded-full bg-lime text-black flex items-center justify-center text-[22px] shadow-xl transition hover:scale-110" aria-label="Discuter"><i data-i="msg"></i></button>
+</div>
+
+<script>
+const $=id=>document.getElementById(id), px=(s,w,h)=>`https://picsum.photos/seed/${s}/${w}/${h}`;
+const I=(n,c='',s='')=>`<svg class="i ${c}" ${s?`style="${s}"`:''}><use href="#${n}"/></svg>`;
+const hyd=()=>document.querySelectorAll('i[data-i]').forEach(e=>{const c=e.className,s=e.getAttribute('style')||'';e.outerHTML=I(e.dataset.i,c,s)});
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+document.querySelectorAll('[data-split]').forEach(el=>{let k=0,o=[];el.childNodes.forEach(n=>{if(n.nodeType==3)n.textContent.split(/(\s+)/).forEach(t=>o.push(t.trim()?`<span class="w"><span style="--i:${k++}">${t}</span></span>`:' '));else o.push(n.outerHTML)});el.innerHTML=o.join('')});
+
+// HERO
+(function(){const s=$('strip');if(!s)return;
+ const base=s.innerHTML;s.innerHTML=base+base+base;let p=false,d=false,sx=0,sl=0;
+ (function L(){if(!p&&!d&&!reduce)s.scrollLeft+=.7;const t=s.scrollWidth/3;if(s.scrollLeft>=2*t)s.scrollLeft-=t;if(s.scrollLeft<=0)s.scrollLeft+=t;requestAnimationFrame(L)})();
+ s.scrollLeft=s.scrollWidth/3;
+ s.onmouseenter=()=>p=true;s.onmouseleave=()=>{p=false;d=false};s.onmousedown=e=>{d=true;sx=e.pageX;sl=s.scrollLeft};addEventListener('mouseup',()=>d=false);s.onmousemove=e=>{if(d)s.scrollLeft=sl-(e.pageX-sx)};
+ s.addEventListener('touchstart',()=>p=true,{passive:true});s.addEventListener('touchend',()=>setTimeout(()=>p=false,1500));
+ $('av').innerHTML=[1,2,3,4].map(i=>`<span class="w-9 h-9 rounded-full bi border-2 border-black" style="background-image:url('https://i.pravatar.cc/80?img=${i+14}')"></span>`).join('');
+})();
+
+// MARQUEES
+const mq=(id,items,f)=>{const el=$(id);if(el)el.innerHTML=[...items,...items].map(f).join('')};
+mq('mqC',"France Espagne Belgique Allemagne Portugal Italie Pays-Bas Suisse Autriche Suède Canada Irlande Grèce Pologne Danemark Finlande Norvège Tchéquie Luxembourg Croatie".split(' '),x=>`<span class="px-7 flex items-center gap-7 text-[20px] md:text-[24px] font-light text-white/80">${x}<span class="w-1 h-1 rounded-full bg-lime"></span></span>`);
+mq('mqV',[["Amina D.","Visa étudiant France"],["Karim B.","Visa affaires Belgique"],["Léa M.","Visa expatriation Espagne"],["Samir T.","Visa étudiant Allemagne"],["Grace O.","Visa tourisme Italie"],["Prosper A.","Visa affaires Pays-Bas"],["Ines K.","Visa étudiant Portugal"],["Yves N.","Visa expatriation Suisse"]],x=>`<div class="shrink-0 mx-1.5 bg-[#0e0e0e] border border-black/10 rounded-full pl-5 pr-2 py-2 text-[13px] text-white flex items-center gap-3"><b class="font-medium">${x[0]}</b><span class="text-white/55">${x[1]}</span><span class="bg-lime text-black rounded-full px-3 py-1 text-[12px] flex items-center gap-1.5 font-medium">${I('check')}Obtenu</span></div>`);
+mq('mqS',["Études","Expatriation","Voyage d'affaires","Tourisme","Visa","Billetterie"],x=>`<span class="px-8 text-[40px] md:text-[72px] leading-none font-light flex items-center gap-14 whitespace-nowrap"><span class="stroke">Prêt pour votre envol ?</span>${x}${I('plane','tx-lime','font-size:.5em')}</span>`);
+
+// SERVICES (CARROUSEL)
+const E = [
+    ["https://imgs.search.brave.com/OP-yHRo87jt6LTHGCjIThGLdxQ4evAiHmRtNcbFJI8Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZXR1ZGllcmVuZXVy/b3BlLmV1L2ltZy9z/ZXJ3aXN5L19sb2dv/L29icmF6ZWtfbG9n/b18zODU5LmpwZw", "Études en Europe", "Orientation, admission et visa étudiant, de A à Z.", ["Campus France", "Bourses"], "6–10 sem."],
+    ["https://i.pinimg.com/1200x/7c/e5/01/7ce50109029094ce349f04a6018d50c3.jpg", "Voyage d'affaires", "Formalités et stratégie pour entreprendre en Europe.", ["Visa business", "B2B"], "2–4 sem."],
+    ["https://i.pinimg.com/736x/50/50/80/5050804c142a6dd79fc5ad3a4d581e60.jpg", "Expatriation", "Analyse et assistance pour une installation durable.", ["Long séjour", "Installation"], "Sur mesure"],
+    ["https://i.pinimg.com/1200x/53/5a/84/535a8422b93252bad92893a919452f1b.jpg", "Tourisme", "Conditions d'entrée et séjour réussi partout en Europe.", ["Schengen", "Assurance"], "2–4 sem."],
+    ["https://i.pinimg.com/736x/c2/bd/78/c2bd78ee39e885e7be5a4c1b3ff5d59f.jpg", "Stages pro", "Démarches et orientation adaptées à votre profil.", ["Conventions", "Entreprises"], "3–6 sem."],
+    ["https://i.pinimg.com/1200x/da/11/66/da11661a38c7e58bb05cf9eda0a78475.jpg", "Billetterie", "Vols au meilleur tarif, voyage sans stress.", ["Comparateur", "Flexibilité"], "48 h"]
+];
+$('svcStor').innerHTML = E.map((e, i) => `
+<article class="post rv snap-start shrink-0 w-[300px] md:w-[340px] rounded-[16px] bg-[#0e0e0e] border border-white/10 overflow-hidden" style="--d:${i}">
+    <div class="relative h-[230px] overflow-hidden">
+        <div class="zm absolute inset-0 bi" style="background-image:url('${e[0].startsWith('http') ? e[0] : px(e[0], 700, 600)}')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-black/20"></div>
+        <span class="absolute top-4 left-4 rounded-full bg-black/60 backdrop-blur px-3 py-1.5 text-[10px] text-lime flex items-center gap-1.5 border border-white/10">${I('check')}Expertise</span>
+        <span class="stamp-mini absolute top-3 right-3 text-white/40">Razcom<br>·<br>${e[4]}</span>
+    </div>
+    <div class="p-6 -mt-8 relative">
+        <b class="font-medium text-[16px] text-white">${e[1]}</b>
+        <p class="text-[11px] uppercase tracking-[.14em] flex items-center gap-1.5 mt-1 text-white/55">${I('pin')}Europe & International</p>
+        <p class="mt-4 text-[13px] leading-relaxed text-white/65">« ${e[2]} »</p>
+        <div class="mt-6 pt-4 border-t border-white/10 flex flex-wrap gap-2 items-center justify-between">
+            <div class="flex flex-wrap gap-1.5">
+                ${e[3].map(t => `<span class="tag text-[9px] px-2 py-1">${t}</span>`).join('')}
+            </div>
+            <span class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/50 transition-colors hover:text-lime hover:border-lime">${I('arr')}</span>
+        </div>
+    </div>
+</article>`).join('');
+
+const svcAuto = $('svcStor');
+if (svcAuto && !reduce) {
+    const svcCount = svcAuto.children.length;
+    svcAuto.insertAdjacentHTML('beforeend', svcAuto.innerHTML);
+    Array.from(svcAuto.children).slice(svcCount).forEach(c => c.setAttribute('aria-hidden', 'true'));
+
+    let svcPos = 0, svcPaused = false, svcVisible = true, svcLast = performance.now(), svcResume;
+    const svcPeriod = () => {
+        const first = svcAuto.children[0], clone = svcAuto.children[svcCount];
+        return clone && first ? clone.offsetLeft - first.offsetLeft : svcAuto.scrollWidth / 2;
+    };
+    const svcResumeNow = () => {
+        svcPaused = false;
+        const period = svcPeriod();
+        svcPos = period > 0 ? svcAuto.scrollLeft % period : 0;
+        svcLast = performance.now();
+    };
+    const svcHold = (ms) => {
+        svcPaused = true;
+        clearTimeout(svcResume);
+        svcResume = setTimeout(svcResumeNow, ms);
+    };
+    svcAuto.addEventListener('pointerenter', () => { svcPaused = true; }, { passive: true });
+    svcAuto.addEventListener('pointerleave', () => { clearTimeout(svcResume); svcResumeNow(); }, { passive: true });
+    svcAuto.addEventListener('focusin', () => { svcPaused = true; }, { passive: true });
+    svcAuto.addEventListener('focusout', () => { clearTimeout(svcResume); svcResumeNow(); }, { passive: true });
+    svcAuto.addEventListener('touchstart', () => svcHold(2500), { passive: true });
+    svcAuto.addEventListener('touchmove', () => svcHold(2500), { passive: true });
+    svcAuto.addEventListener('wheel', () => svcHold(2500), { passive: true });
+    document.querySelectorAll('#services button[aria-label="Précédent"], #services button[aria-label="Suivant"]').forEach(b => b.addEventListener('click', () => svcHold(2500)));
+    new IntersectionObserver(es => { svcVisible = es[0].isIntersecting; }, { threshold: 0 }).observe(svcAuto);
+
+    const svcLoop = (now) => {
+        const dt = Math.min(50, now - svcLast); svcLast = now;
+        const period = svcPeriod();
+        if (!svcPaused && svcVisible && period > 0) {
+            svcPos = (svcPos + 0.5 * (dt / 16.67)) % period;
+            svcAuto.scrollLeft = svcPos;
+        }
+        requestAnimationFrame(svcLoop);
+    };
+    requestAnimationFrame(svcLoop);
+}
+
+// CHIFFRES
+$('num').innerHTML=[[100,"+","Clients accompagnés"],[98,"%","Taux de satisfaction"],[54,"+","Destinations couvertes"],[6,"","Services spécialisés"]].map((n,i)=>`<div class="rv border-t border-white/15 pt-5" style="--d:${i}"><p class="text-[54px] md:text-[76px] font-light leading-none tracking-tight tabular-nums"><span data-c="${n[0]}">0</span><span class="tx-lime text-[.5em] align-top ml-1">${n[1]}</span></p><p class="mt-3 text-[10px] uppercase tracking-[.18em] text-white/45">${n[2]}</p></div>`).join('');
+
+// METHODE
+$('tl').innerHTML=[["Semaine 1","Prise de contact","Consultation gratuite pour présenter votre projet à nos conseillers et cadrer vos objectifs."],["Semaine 1–2","Analyse du profil","Évaluation de votre situation et identification des meilleures options selon votre projet."],["Semaine 2–5","Montage du dossier","Constitution rigoureuse et vérification de chaque document requis pour le consulat."],["Jusqu'au départ","Suivi et réussite","Accompagnement jusqu'à l'obtention du visa, la réservation du billet et votre départ."]].map((s,i)=>`<div class="step rv" style="--d:${i};--k:${i}"><div class="flex items-start justify-between gap-4"><p class="text-[9px] uppercase tracking-[.24em] opacity-50">${s[0]}</p><span class="text-[11px] tracking-[.2em] opacity-25">0${i+1}</span></div><h3 class="text-[24px] md:text-[32px] font-light tracking-tight mt-3">${s[1]}</h3><p class="mt-3 text-[14px] leading-relaxed opacity-60 max-w-md">${s[2]}</p></div>`).join('');
+
+// Observer pour changer l'image de la méthode au scroll
+const steps = document.querySelectorAll('.step');
+const methodImages = document.querySelectorAll('.methode-img');
+const methodObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const index = Array.from(steps).indexOf(entry.target);
+            methodImages.forEach((img, i) => {
+                img.style.opacity = (i === index) ? '1' : '0';
+            });
+        }
+    });
+}, { threshold: 0.4 }); // Se déclenche quand 40% de l'étape est visible
+steps.forEach(step => methodObserver.observe(step));
+
+// Image de la méthode fixée pendant le défilement de la section
+(function(){
+ const sec=$('methode'), media=$('methode-media'), pin=$('methode-img-container');
+ if(!sec||!media||!pin) return;
+ let raf=0;
+ const upd=()=>{
+  raf=0;
+  const r=media.getBoundingClientRect(), s=sec.getBoundingClientRect();
+  const top=innerWidth>=1024?112:80;
+  if(r.top<top&&s.bottom>top){
+   pin.style.position='fixed';
+   pin.style.top=top+'px';
+   pin.style.left=r.left+'px';
+   pin.style.width=r.width+'px';
+   pin.style.height=r.height+'px';
+  }else{
+   pin.style.position='';
+   pin.style.top='';
+   pin.style.left='';
+   pin.style.width='';
+   pin.style.height='';
+  }
+ };
+ const on=()=>{if(!raf)raf=requestAnimationFrame(upd)};
+ addEventListener('scroll',on,{passive:true});
+ addEventListener('resize',on);
+ upd();
+})();
+
+// POURQUOI
+$('why').innerHTML=[["uc","Accompagnement personnalisé","Analyse approfondie de votre profil et suivi individuel à chaque étape."],["land","Expertise consulaire reconnue","Des conseillers qui maîtrisent les procédures de chaque consulat européen."],["eye","Transparence totale","Pas de frais cachés, pas de fausses promesses. Un accompagnement honnête."],["tu","Résultats prouvés","+100 clients accompagnés avec 98 % de satisfaction à travers l'Europe."]].map((w,i)=>`<div class="why-row rv" style="--d:${i}"><span class="text-[10px] tracking-[.2em] opacity-30 pt-1">0${i+1}</span><div><h3 class="text-[22px] md:text-[28px] font-light tracking-tight">${w[1]}</h3><p class="mt-2 text-[13px] leading-relaxed text-white/55 max-w-md">${w[2]}</p></div><span class="wi">${I(w[0])}</span></div>`).join('');
+
+// DESTINATIONS
+const D=[["FR","France",3,8,"Français",3],["ES","Espagne",2,6,"Espagnol",2],["DE","Allemagne",4,9,"Allemand",3],["PT","Portugal",3,6,"Portugais",2],["BE","Belgique",3,7,"FR / NL",3],["CH","Suisse",4,10,"FR / DE",4],["NL","Pays-Bas",3,8,"Néerlandais",3],["IT","Italie",3,7,"Italien",2]];
+let sel=[];
+function rd(){$('dest').innerHTML=D.map((d,i)=>`<button data-i="${i}" class="dchip ${sel.includes(i)?'on':''}"><span class="cc">${d[0]}</span>${d[1]}${sel.includes(i)?`<span class="ml-1">${I('check')}</span>`:''}</button>`).join('');
+ const c=$('cmp');
+ if(!sel.length){c.innerHTML=`<div class="md:col-span-2 rounded-[18px] border border-dashed border-black/20 flex flex-col items-center justify-center py-16 text-black/45 text-[14px] gap-3">${I('globe','text-[26px]')}Sélectionnez une destination pour ouvrir le carnet</div>`;return}
+ c.innerHTML=sel.map(i=>{const d=D[i];return `<div class="bp rv in"><div class="flex items-start justify-between gap-4"><div><p class="text-[9px] uppercase tracking-[.26em] opacity-40">Destination</p><h3 class="text-[30px] md:text-[38px] font-light tracking-tight mt-1">${d[1]}</h3></div><span class="text-[10px] tracking-[.2em] border border-white/20 rounded-full px-3 py-1 opacity-70">${d[0]}</span></div>
+ <div class="mt-7 flex items-center justify-between text-[12px] opacity-55"><span>Délai de visa</span><span class="tx-lime font-medium">${d[2]}–${d[3]} sem.</span></div><div class="mt-2 h-2 rounded-full bg-white/10 relative overflow-hidden"><div class="bar absolute h-full rounded-full bg-lime" style="margin-left:${d[2]*10}%;width:${(d[3]-d[2])*10}%"></div></div>
+ <div class="dash"></div>
+ <div class="mt-7 grid grid-cols-2 gap-4 text-[13px]"><div><p class="text-[9px] uppercase tracking-[.18em] opacity-40">Langue</p><p class="mt-1">${d[4]}</p></div><div><p class="text-[9px] uppercase tracking-[.18em] opacity-40">Coût de la vie</p><p class="mt-1 tracking-widest tx-lime">${'€'.repeat(d[5])}<span class="opacity-25">${'€'.repeat(4-d[5])}</span></p></div></div>
+ <div class="mt-7 flex items-end justify-between gap-4"><div class="barcode"></div><span class="text-[9px] uppercase tracking-[.24em] tx-lime">Dossier ouvert</span></div></div>`}).join('')+(sel.length<2?`<div class="rounded-[18px] border border-dashed border-black/20 flex items-center justify-center text-black/45 text-[14px] p-8 text-center">Choisissez une 2ᵉ destination pour comparer</div>`:'')}
+$('dest').onclick=e=>{const b=e.target.closest('button');if(!b)return;const i=+b.dataset.i;sel=sel.includes(i)?sel.filter(x=>x!=i):[...sel.slice(-1),i];rd()};rd();
+
+// ECOLES
+const S=[["IHM","Langue","Langue intensive","Instituto Hispánico de Murcia","Espagnol pour étrangers, Murcia","ihdemu.com"],["ABS","Business","Business et langue","Alicante Business School","Gestion, marketing et espagnol, Alicante","alicante-businessschool.es"],["CES","Pro","Formation pro (FP)","CESUR Formación","Cycles de formation professionnelle, Murcia","cesurformacion.com"],["DAV","Pro","Formation pro","DAVANTE","FP officielle, présentiel et en ligne","davante.es"],["CC","Dipl","Formation diplômante","Collège Cervantes","Formation qualifiante",""],["LV","Dipl","Formation diplômante","Luis Vives Escuela","Formation qualifiante",""],["CV","Dipl","Formation diplômante","Centre Carlos V","Formation qualifiante",""]];
+const T=[["Tous","Tous les centres"],["Langue","Langue"],["Business","Business"],["Dipl","Formation diplômante"],["Pro","Formation professionnelle"]];let ft='Tous';
+function rs(){$('tabs').innerHTML=T.map(t=>`<button data-t="${t[0]}" class="chip border rounded-full px-5 py-2.5 text-[12px] ${ft==t[0]?'bg-lime text-black border-lime':'border-white/15 text-white/65 hover:border-white/40'}">${t[1]}</button>`).join('');
+ $('schools').innerHTML=S.filter(s=>ft=='Tous'||s[1]==ft).map((s,i)=>`<div class="sch-row" style="animation-delay:${i*60}ms"><span class="logo">${s[0]}</span><div><p class="text-[10px] uppercase tracking-[.18em] text-white/40">${s[2]}</p><h3 class="text-[18px] md:text-[20px] font-light mt-1">${s[3]}</h3></div><div class="meta"><p class="text-[12px] text-white/55">${s[4]}</p><p class="text-[11px] text-white/30 mt-1 flex items-center gap-1">${s[5]?s[5]+I('upr'):'Site à confirmer'}</p></div><div class="flex items-center justify-end"><a href="#contact" class="btn bg !py-2.5 !px-4">Brochure ${I('dl')}</a></div></div>`).join('')}
+$('tabs').onclick=e=>{const b=e.target.closest('button');if(b){ft=b.dataset.t;rs()}};rs();
+
+// TEMOIGNAGES
+$('tem').innerHTML=[["J'ai intégré une université en France en 3 mois. Un accompagnement impeccable du début à la fin.","Amadou K.","Master informatique, Paris"],["Mon dossier visa business monté avec précision. Visa obtenu du premier coup, sans stress.","Rosalie G.","Entrepreneuse, Barcelone"],["Razcom m'a accompagné dans tout mon projet. Je suis aujourd'hui installé en Belgique.","Ibrahim S.","Ingénieur, Bruxelles"],["Brochure reçue en 5 minutes, dossier monté en une semaine. Rapide et sérieux.","Sarah D.","Étudiante, Lisbonne"]].map((t,i)=>`<div class="post rv snap-start shrink-0 w-[320px] md:w-[370px] rounded-[16px] ${i===0?'bg-[#0a0a0a] text-[#f2f0e8] border-black':'bg-white border-black/10'} border p-7 flex flex-col justify-between min-h-[290px]" style="--d:${i}"><div><div class="flex items-center justify-between"><div class="flex gap-0.5 ${i===0?'text-lime':'text-[#c99a00]'}">${I('star','f').repeat(5)}</div><span class="text-[44px] leading-none opacity-15">”</span></div><p class="mt-5 text-[16px] leading-relaxed">« ${t[0]} »</p></div><div class="flex items-center gap-3 mt-8 pt-5 border-t ${i===0?'border-white/15':'border-black/10'}"><div class="w-11 h-11 rounded-full bi ring-2 ${i===0?'ring-white/10':'ring-black/10'}" style="background-image:url('https://i.pravatar.cc/90?img=${i+40}')"></div><div><b class="font-medium text-[14px]">${t[1]}</b><p class="text-[12px] opacity-55">${t[2]}</p></div></div></div>`).join('');
+
+// STORIES
+const ST=[["Chloé A.","Installée à Paris","Deux ans après mon visa étudiant, je travaille aujourd'hui en CDI à Paris. Razcom a posé les bases de tout ça."],["Junior K.","Installé à Lisbonne","Mon entreprise de e-commerce est née à Lisbonne grâce au visa affaires monté avec l'équipe Razcom."],["Nadia R.","Installée à Berlin","De Cotonou à Berlin en 4 mois. Chaque étape du dossier a été suivie de près, sans mauvaise surprise."],["Yannick T.","Installé à Genève","Le suivi après l'arrivée à Genève a fait toute la différence — logement, banque, tout était préparé."],["Amadou K.","Installé à Paris","J'ai intégré une université en France en 3 mois, avec un accompagnement impeccable."]];
+$('sto').innerHTML=ST.map((s,i)=>`<button data-i="${i}" class="group text-center rv mag" style="--d:${i}"><span class="block w-[86px] h-[86px] md:w-[104px] md:h-[104px] rounded-full p-[2px] group-hover:scale-105 transition-transform duration-500" style="background:linear-gradient(135deg,#d9f76b,rgba(217,247,107,.15))"><span class="block w-full h-full rounded-full bi border-[3px] border-[#050505]" style="background-image:url('https://i.pravatar.cc/200?img=${i+50}')"></span></span><span class="block mt-4 text-[13px]">${s[0].split(' ')[0]}</span><span class="block text-[11px] text-white/40 mt-0.5">${s[1]}</span></button>`).join('');
+
+let si=0,sT;function os(i){if(i<0||i>=ST.length)return cs();si=i;const s=ST[i];$('svc').style.backgroundImage=`url('${px('rz-st'+i,700,1200)}')`;$('svn').textContent=s[0];$('svl').textContent=s[1];$('svt').textContent='« '+s[2]+' »';const p=$('svp');p.style.animation='none';p.offsetHeight;p.style.animation='prog 6s linear forwards';clearTimeout(sT);sT=setTimeout(()=>os(si+1),6000);$('sv').classList.remove('opacity-0','pointer-events-none')}
+function cs(){clearTimeout(sT);$('sv').classList.add('opacity-0','pointer-events-none')}
+$('sto').onclick=e=>{const b=e.target.closest('button');if(b)os(+b.dataset.i)};$('svx').onclick=cs;$('svf').onclick=()=>os(si+1);$('svb').onclick=()=>os(Math.max(0,si-1));addEventListener('keydown',e=>{if(e.key=='Escape')cs()});
+
+// QUIZ
+const QZ=[["Quel est votre projet ?",["Études en Europe","Voyage d'affaires","Expatriation","Tourisme"]],["Dans quel délai souhaitez-vous partir ?",["Moins de 2 mois","De 2 à 6 mois","Plus de 6 mois"]]];let qa=[],qz=0;
+function rq(){const z=$('quiz');let h;
+ if(qz>=2){h=`<span class="w-14 h-14 rounded-full bg-lime text-black flex items-center justify-center text-[24px]">${I('plane')}</span><h4 class="text-[24px] font-light mt-5">Un projet « ${qa[0].toLowerCase()} » vous correspond</h4><p class="mt-3 text-[14px] text-white/60 leading-relaxed">Avec un horizon « ${qa[1].toLowerCase()} », nous démarrons par une analyse complète de votre profil pour bâtir votre dossier de zéro. Réservez un appel gratuit avec un conseiller pour démarrer.</p><div class="mt-7 flex flex-wrap items-center gap-4"><a href="#contact" class="btn bl">Réserver mon appel gratuit ${I('arr')}</a><button id="qr" class="text-[13px] text-white/55 hover:text-lime flex items-center gap-2 transition">${I('ref')}Recommencer</button></div>`}
+ else h=`<div class="h-1 rounded bg-white/10 overflow-hidden"><div class="h-full bg-lime transition-all duration-700" style="width:${(qz+1)*50}%"></div></div><p class="mt-5 text-[12px] text-white/45">Question ${qz+1} sur 2</p><h4 class="text-[22px] font-light mt-1">${QZ[qz][0]}</h4><div class="mt-6 grid gap-3">${QZ[qz][1].map(o=>`<button class="qo group flex items-center justify-between text-left rounded-xl border border-white/12 px-5 py-4 text-[14px] transition-all duration-300 hover:border-lime hover:bg-lime hover:text-black hover:translate-x-1">${o}${I('arr','opacity-0 group-hover:opacity-100 transition')}</button>`).join('')}</div>`;
+ z.style.opacity=0;z.style.transform='translateY(12px)';setTimeout(()=>{z.innerHTML=h;z.style.transition='opacity .5s,transform .6s cubic-bezier(.2,.8,.2,1)';z.style.opacity=1;z.style.transform='none';
+  z.querySelectorAll('.qo').forEach(b=>b.onclick=()=>{qa.push(b.textContent);qz++;rq()});const r=$('qr');if(r)r.onclick=()=>{qa=[];qz=0;rq()}},qz||qa.length?250:0)}rq();
+
+// BUDGET
+const B=[["home","Logement",450,200,1200],["bus","Transport",60,0,200],["food","Nourriture",280,100,600],["shield","Assurance",45,0,150]];
+const fill=r=>r.style.setProperty('--p',((r.value-r.min)/(r.max-r.min)*100)+'%');
+$('bud').innerHTML=B.map((b,i)=>`<div><div class="flex justify-between items-center text-[14px]"><span class="flex items-center gap-3"><span class="w-9 h-9 rounded-full bg-lime flex items-center justify-center">${I(b[0])}</span>${b[1]}</span><b class="text-[20px] font-light tabular-nums" id="v${i}">${b[2]} €</b></div><input class="mt-4" type="range" min="${b[3]}" max="${b[4]}" step="5" value="${b[2]}" data-i="${i}"></div>`).join('');
+$('bud').querySelectorAll('input').forEach(fill);
+let cur=835;function tw(to){const from=cur,t0=performance.now();cur=to;(function f(n){const u=Math.min(1,(n-t0)/450);$('tot').textContent=Math.round(from+(to-from)*(1-Math.pow(1-u,3)))+' €';if(u<1)requestAnimationFrame(f)})(t0)}
+$('bud').oninput=e=>{let t=0;$('v'+e.target.dataset.i).textContent=e.target.value+' €';fill(e.target);$('bud').querySelectorAll('input').forEach(x=>t+=+x.value);tw(t)};
+
+// FAQ
+$('fq').innerHTML=[["Combien de temps faut-il pour obtenir un visa ?","Cela dépend du pays et du type de visa : de 2 à 10 semaines en moyenne. Nous vous donnons une estimation précise après l'analyse de votre profil."],["La première consultation est-elle payante ?","Non, la consultation de prise de contact est gratuite et sans engagement."],["Garantissez-vous l'obtention du visa ?","Aucun conseiller ne peut garantir une décision consulaire. Nous montons un dossier rigoureux pour maximiser vos chances."],["Quels documents dois-je préparer ?","Passeport, justificatifs d'études ou professionnels et ressources financières. Nous vous remettons la liste exacte selon votre destination."],["Puis-je être accompagné depuis Cotonou ?","Oui, nous accompagnons nos clients à distance et en présentiel, depuis Cotonou, Paris et Madrid."]].map((f,i)=>`<div class="fq rv border-b border-black/15" style="--d:${i}"><button class="w-full flex justify-between items-center gap-6 text-left py-6 text-[16px] md:text-[17px] transition-opacity hover:opacity-60"><span class="max-w-[85%]">${f[0]}</span><span class="ic w-9 h-9 shrink-0 rounded-full border border-black/20 flex items-center justify-center">${I('plus')}</span></button><div class="b"><p class="text-[13px] opacity-60 max-w-xl leading-relaxed pb-6">${f[1]}</p></div></div>`).join('');
+$('fq').onclick=e=>{const x=e.target.closest('.fq');if(x&&e.target.closest('button'))x.classList.toggle('open')};
+
+// CONTACT
+let ca,cb;function nc(){ca=1+Math.random()*8|0;cb=1+Math.random()*8|0;$('cq').textContent=ca+' + '+cb+' = ?';$('ca').value=''}nc();$('cr2').onclick=nc;
+$('cf').onsubmit=e=>{e.preventDefault();const f=e.target;if(f.website.value)return;if(!f.checkValidity()){f.reportValidity();return}
+ if(+$('ca').value!==ca+cb){$('cm').textContent='Vérification incorrecte, réessayez.';$('cm').classList.add('text-red-600');nc();return}
+ $('cm').classList.remove('text-red-600');$('sbt').innerHTML=I('check')+'Message envoyé';
+ setTimeout(()=>{f.reset();nc();$('sbt').innerHTML='Envoyer mon message '+I('send');$('cm').textContent='Merci ! Nous vous répondons sous 24 h ouvrées.'},2200)};
+$('nl').onsubmit=e=>{e.preventDefault();e.target.innerHTML=`<span class="py-2.5 flex items-center gap-2 text-lime text-[13px]">${I('check')}Merci, vous êtes inscrit</span>`};
+const ck=()=>document.querySelectorAll('.clk').forEach(c=>c.textContent=new Date().toLocaleTimeString('fr-FR',{timeZone:c.dataset.tz,hour:'2-digit',minute:'2-digit'}));ck();setInterval(ck,20000);
+$('cbn').onclick=()=>{const p=$('cp'),o=p.classList.contains('opacity-0');p.classList.toggle('opacity-0',!o);p.classList.toggle('scale-90',!o);p.classList.toggle('pointer-events-none',!o)};
+
+// HEADER · PROGRESSION · REVELATIONS
+const hbar=$('hbar'),navLinks=[...document.querySelectorAll('#nv a')],navSecs=navLinks.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+function onS(){const y=scrollY;hbar.classList.toggle('on',y>60);
+ const max=document.documentElement.scrollHeight-innerHeight;$('bar').style.width=(max>0?y/max*100:0)+'%';
+ let c='';navSecs.forEach(sec=>{const r=sec.getBoundingClientRect();if(r.top<=innerHeight*.4&&r.bottom>innerHeight*.4)c='#'+sec.id});
+ navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')===c));
+ const tl=$('tl');if(tl){const r=tl.getBoundingClientRect();tl.style.setProperty('--p',Math.max(0,Math.min(100,(innerHeight*.55-r.top)/r.height*100))+'%')}}
+addEventListener('scroll',onS,{passive:true});onS();
+const mm=$('mm'),tm=o=>{mm.classList.toggle('opacity-0',!o);mm.classList.toggle('pointer-events-none',!o)};$('mb').onclick=()=>tm(true);$('mx').onclick=()=>tm(false);mm.querySelectorAll('a').forEach(a=>a.onclick=()=>tm(false));
+const countUp=c=>{if(c.dataset.counted)return;c.dataset.counted='1';const to=+c.dataset.c,t0=performance.now();(function f(n){const u=Math.min(1,(n-t0)/1600);c.textContent=Math.round(to*(1-Math.pow(1-u,4)));if(u<1)requestAnimationFrame(f)})(t0)};
+const revealEl=el=>{if(el.classList.contains('in'))return;el.classList.add('in');el.querySelectorAll('[data-c]').forEach(countUp)};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;revealEl(e.target);io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll('.rv,[data-split]').forEach(e=>io.observe(e));
+const revealNow=()=>document.querySelectorAll('.rv:not(.in),[data-split]:not(.in)').forEach(el=>{const r=el.getBoundingClientRect();if(r.top<innerHeight*.95&&r.bottom>0)revealEl(el)});
+revealNow();
+let revT=0;const revOnScroll=()=>{const n=performance.now();if(n-revT<70)return;revT=n;revealNow()};
+addEventListener('scroll',revOnScroll,{passive:true});addEventListener('resize',revOnScroll);
+setInterval(revealNow,250);requestAnimationFrame(revealNow);setTimeout(revealNow,350);
+hyd();
+</script>
+<script>
+(function(){const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+ if(!reduce&&fine){
+  document.querySelectorAll('.mag').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect();const x=(e.clientX-r.left-r.width/2)/r.width;const y=(e.clientY-r.top-r.height/2)/r.height;el.style.transform=`translate(${x*8}px,${y*6}px)`});el.addEventListener('pointerleave',()=>{el.style.transform=''})});
+ }
+ document.addEventListener('pointermove',e=>{const s=e.target.closest('.spot');if(!s)return;const r=s.getBoundingClientRect();s.style.setProperty('--mx',(e.clientX-r.left)+'px');s.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+ if(!reduce){const els=[...document.querySelectorAll('[data-parallax]')];const upd=()=>els.forEach(el=>{const r=el.getBoundingClientRect();if(r.bottom<-100||r.top>innerHeight+100)return;const sp=parseFloat(el.dataset.parallax)||.1;const off=(r.top+r.height/2-innerHeight/2)*sp;el.style.transform=`translate3d(0,${off}px,0) scale(1.1)`});
+  let raf=false;const on=()=>{if(raf)return;raf=true;requestAnimationFrame(()=>{upd();raf=false})};addEventListener('scroll',on,{passive:true});addEventListener('resize',on);upd()}
+})();
+</script>
+
+<script src="razcom-patch.js"></script>
+
+</body>
+</html>
