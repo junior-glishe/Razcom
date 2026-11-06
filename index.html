@@ -41,7 +41,7 @@ input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.25)}
 input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:#d9f76b;border:4px solid #050505}
 .fl{position:relative}.fl input,.fl select,.fl textarea{width:100%;background:transparent;border-bottom:1px solid rgba(0,0,0,.25);padding:1.5rem 0 .5rem;outline:none;transition:border-color .3s;border-radius:0;color:#000}
 .fl input:focus,.fl select:focus,.fl textarea:focus{border-color:#000}
-.fl label{position:absolute;left:0;top:1.1rem;font-size:14px;color:rgba(0,0,0,.5);pointer-events:none;transition:all .3s cubic-bezier(.2,.8,.2,1)}
+.fl label{position:absolute;left:0;top:1.1rem;font-size:14px;color:rgba(0,0,0,.5);pointer-events-auto;transition:all .3s cubic-bezier(.2,.8,.2,1)}
 .fl input:focus+label,.fl input:not(:placeholder-shown)+label,.fl textarea:focus+label,.fl textarea:not(:placeholder-shown)+label,.fl select:valid+label{top:0;font-size:11px;color:#000}
 .stroke{-webkit-text-stroke:1px rgba(255,255,255,.3);color:transparent}
 .panel{transform-origin:bottom right;transition:opacity .4s,transform .5s cubic-bezier(.2,.8,.2,1)}
@@ -69,8 +69,8 @@ body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
 .outline{color:transparent;-webkit-text-stroke:1.2px rgba(10,10,10,.45)}
 .dark .outline{-webkit-text-stroke:1.2px rgba(255,255,255,.4)}
 .tx-lime{color:var(--lime)}
-.glow{position:absolute;border-radius:50%;filter:blur(100px);background:radial-gradient(circle,rgba(217,247,107,.16),transparent 65%);pointer-events:none}
-.big-ghost{position:absolute;font-size:clamp(9rem,24vw,22rem);line-height:.7;font-weight:300;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);pointer-events:none;user-select:none}
+.glow{position:absolute;border-radius:50%;filter:blur(100px);background:radial-gradient(circle,rgba(217,247,107,.16),transparent 65%);pointer-events-auto}
+.big-ghost{position:absolute;font-size:clamp(9rem,24vw,22rem);line-height:.7;font-weight:300;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.08);pointer-events-auto;user-select:none}
 .paper .big-ghost{-webkit-text-stroke:1px rgba(10,10,10,.08)}
 #hd{color:#fff}
 #hbar{transition:background .5s,box-shadow .5s,border-color .5s}
@@ -114,7 +114,7 @@ body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
 .sch-row:hover .logo{background:var(--lime);color:#000;border-color:var(--lime)}
 @media(max-width:767px){.sch-row{grid-template-columns:auto 1fr auto}.sch-row .meta{display:none}}
 .gate{position:relative;overflow:hidden;background:var(--lime);color:var(--ink)}
-.gate .ghost{position:absolute;font-size:clamp(8rem,22vw,20rem);line-height:.7;font-weight:300;letter-spacing:-.06em;color:rgba(10,10,10,.06);pointer-events:none;user-select:none}
+.gate .ghost{position:absolute;font-size:clamp(8rem,22vw,20rem);line-height:.7;font-weight:300;letter-spacing:-.06em;color:rgba(10,10,10,.06);pointer-events-auto;user-select:none}
 .stamp{width:112px;height:112px;border:1.5px dashed rgba(10,10,10,.35);border-radius:50%;display:grid;place-items:center;text-align:center;font-size:8px;line-height:1.35;letter-spacing:.18em;text-transform:uppercase;animation:spin 26s linear infinite;color:rgba(10,10,10,.6)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .float{animation:floaty 8s ease-in-out infinite}
@@ -214,13 +214,13 @@ body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
   <div class="relative shrink-0 min-w-[260px] md:min-w-[320px] h-full bi" style="background-image:url('https://i.pinimg.com/1200x/89/4a/17/894a173d319d54e832c7f1f9dc0f90c7.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Lisbonne</p><p class="text-[12px] text-white/70">Portugal</p></div></div>
   <div class="relative shrink-0 min-w-[260px] md:min-w-[320px] h-full bi" style="background-image:url('https://i.pinimg.com/736x/af/f1/9c/aff19cc98fb9a5dae4aa1893bd0e8e98.jpg')"><div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div><div class="absolute bottom-36 left-6"><p class="text-[24px] font-light">Bruxelles</p><p class="text-[12px] text-white/70">Belgique</p></div></div>
  </div>
- <div class="absolute inset-0 bg-black/40 pointer-events-none"></div>
- <div class="absolute inset-0 md:w-[62%] bg-gradient-to-r from-black via-black/75 md:via-black/45 to-transparent pointer-events-none"></div>
- <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#050505] to-transparent pointer-events-none"></div>
- <div class="relative z-10 w-full max-w-[1400px] mx-auto px-5 md:px-10 pt-36 pb-32 self-center pointer-events-none">
+ <div class="absolute inset-0 bg-black/40"></div>
+ <div class="absolute inset-0 md:w-[62%] bg-gradient-to-r from-black via-black/75 md:via-black/45 to-transparent"></div>
+ <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-[#050505] to-transparent"></div>
+ <div class="relative z-10 w-full max-w-[1400px] mx-auto px-5 md:px-10 pt-36 pb-32 self-center">
   <h1 data-split class="text-[54px] sm:text-[68px] md:text-[84px] font-light leading-[1.02] tracking-[-.025em]">Votre envol<br>vers l'Europe</h1>
   <p class="rv mt-7 max-w-[400px] text-[15px] leading-relaxed text-white/75" style="--d:4">Études, expatriation, affaires ou tourisme — Razcom transforme votre projet en réalité, avec une expertise consulaire et un accompagnement humain à chaque étape.</p>
-  <div class="rv mt-8 flex flex-wrap gap-3 pointer-events-auto" style="--d:5"><a href="#contact" class="btn bl">Démarrer mon projet <i data-i="arr"></i></a><a href="#services" class="btn bg">Découvrir nos services</a></div>
+  <div class="rv mt-8 flex flex-wrap gap-3 pointer-events-auto" style="--d:5"><a href="#contact" class="btn bl inline-block px-4 py-2">Démarrer mon projet <i data-i="arr"></i></a><a href="#services" class="btn bg inline-block px-4 py-2">Découvrir nos services</a></div>
   <div class="rv mt-10 flex items-center gap-4 text-[13px]" style="--d:6"><div class="flex -space-x-2" id="av"></div><div><div class="flex gap-0.5 text-lime"><i data-i="star" class="f"></i><i data-i="star" class="f"></i><i data-i="star" class="f"></i><i data-i="star" class="f"></i><i data-i="star" class="f"></i></div><p class="mt-1 text-white/80"><b class="font-medium text-white">+100 clients accompagnés</b> &nbsp;4.9/5, 98 % de satisfaction</p></div></div>
  </div>
  <div class="hidden md:flex absolute bottom-10 right-10 z-10 gap-3 text-[13px]">
@@ -240,7 +240,7 @@ body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
    <h2 data-split class="display mt-6">On ne vend pas des billets.</h2>
    <p class="rv outline display mt-1" style="--d:2">On prépare des départs.</p>
    <p class="rv lead mt-8" style="--d:3">Razcom n'est pas une agence de plus. C'est un carnet de vol : chaque projet y est consigné, chaque étape validée, chaque départ préparé avec la rigueur d'un équipage et la chaleur d'un proche.</p>
-   <div class="rv mt-8 flex flex-wrap gap-3" style="--d:4"><a href="#methode" class="btn bk mag">Découvrir la méthode <i data-i="arr"></i></a><a href="#contact" class="btn !bg-black/[.04] !text-black hover:!bg-black/10 border border-black/15">Prendre rendez-vous</a></div>
+   <div class="rv mt-8 flex flex-wrap gap-3" style="--d:4"><a href="#methode" class="btn bk mag inline-block px-4 py_2">Découvrir la méthode <i data-i="arr"></i></a><a href="#contact" class="btn !bg-black/[.04] !text-black hover:!bg-black/10 border border-black/15">Prendre rendez-vous</a></div>
   </div>
   <div class="lg:col-span-4 flex flex-col gap-8 lg:pt-6">
    <div class="rv flex items-center justify-center lg:justify-start" style="--d:2"><div class="stamp"><span>Razcom<br>·<br>Départ<br>confirmé<br>·</span></div></div>
@@ -278,7 +278,7 @@ body::after{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opa
     <p class="rv kicker tx-lime">02 · Résultats</p>
     <h2 data-split class="h2 mt-5">Des chiffres<br>qui décollent</h2>
     <p class="rv lead mt-5">Depuis Paris et Madrid, nous transformons chaque année les projets de centaines d'Africains en départs réussis.</p>
-    <a href="#contact" class="rv btn bl mag mt-7" style="--d:2">Parler à un conseiller <i data-i="arr"></i></a>
+    <a href="#contact" class="rv btn bl mag mt-7 inline-block px-4 py-2">Parler à un conseiller <i data-i="arr"></i></a>
    </div>
    <div id="num" class="grid grid-cols-2 gap-x-8 gap-y-10"></div>
   </div>
@@ -359,7 +359,7 @@ parcoursAcc.addEventListener('keydown',e=>{const c=e.target.closest('.rz-pc');if
      <img class="methode-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0" src="https://i.pinimg.com/736x/fb/47/61/fb476157e05c9b84d0356b613a2e2826.jpg" alt="Montage du dossier" loading="lazy" decoding="async">
      <img class="methode-img absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ease-in-out opacity-0" src="https://i.pinimg.com/736x/62/58/c3/6258c38f15bfa95157d7b4bc377c557f.jpg" alt="Suivi et réussite" loading="lazy" decoding="async">
 
-     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent pointer-events-none"></div>
+     <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent"></div>
      <span class="absolute top-5 left-5 rounded-full bg-black/50 backdrop-blur border border-white/15 px-3.5 py-1.5 text-[11px] text-white/80 flex items-center gap-2 z-10"><span class="w-1.5 h-1.5 rounded-full bg-lime"></span>Conseillère Razcom</span>
      <div class="absolute left-6 bottom-6 text-white z-10"><p class="text-[52px] font-light leading-none tracking-tight">98<span class="text-[22px] align-top">%</span></p><p class="text-[13px] text-white/75 mt-2">Clients satisfaits</p></div>
      <!--<div class="absolute right-6 bottom-6 text-right text-[12px] text-white/80 z-10"><p class="flex items-center gap-1.5 justify-end text-lime"><i data-i="shield"></i>Visa dès le 1ᵉʳ dépôt</p></div>-->
@@ -445,7 +445,7 @@ parcoursAcc.addEventListener('keydown',e=>{const c=e.target.closest('.rz-pc');if
   <div id="sto" class="mt-14 flex justify-center gap-8 md:gap-14 flex-wrap"></div>
  </div>
 </section>
-<div id="sv" class="fixed inset-0 z-[70] bg-black/90 backdrop-blur flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500">
+<div id="sv" class="fixed inset-0 z-[70] bg-black/90 backdrop-blur flex items-center justify-center opacity-0 transition-opacity duration-500">
  <div class="relative w-[min(92vw,380px)] aspect-[9/16] max-h-[88vh] rounded-[28px] overflow-hidden bi ring-1 ring-white/15" id="svc">
   <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/40"></div>
   <div class="absolute top-4 inset-x-4 h-[3px] bg-white/25 rounded overflow-hidden"><div id="svp" class="h-full bg-lime origin-left"></div></div>
@@ -462,7 +462,7 @@ parcoursAcc.addEventListener('keydown',e=>{const c=e.target.closest('.rz-pc');if
   <p class="relative text-[10px] uppercase tracking-[.3em] opacity-50">Prêt au départ ?</p>
   <h2 data-split class="relative display mt-5">Embarquement<br>immédiat.</h2>
   <p class="rv relative mt-6 text-[15px] opacity-65 max-w-md mx-auto" style="--d:2">Réservez votre consultation dès aujourd'hui et transformez votre projet en réalité. Sans engagement.</p>
-  <div class="rv relative mt-9 flex gap-3 justify-center flex-wrap" style="--d:3"><a href="#contact" class="btn bk mag">Réserver une séance <i data-i="arr"></i></a><a href="#services" class="btn !bg-black/[.08] !text-black hover:!bg-black/15 border border-black/15">Voir les services</a></div>
+  <div class="rv relative mt-9 flex gap-3 justify-center flex-wrap" style="--d:3"><a href="#contact" class="btn bk mag inline-block px-4 py_2">Réserver une séance <i data-i="arr"></i></a><a href="#services" class="btn !bg-black/[.08] !text-black hover:!bg-black/15 border border-black/15 inline-block px-4 py_2">Voir les services</a></div>
   <div class="rv relative mt-12 flex flex-wrap justify-center gap-x-10 gap-y-3 text-[9px] uppercase tracking-[.24em] opacity-55" style="--d:4"><span>Porte · A24</span><span>Classe · Ambition</span><span>Statut · Confirmé</span></div>
  </div>
 </section>
@@ -550,7 +550,7 @@ parcoursAcc.addEventListener('keydown',e=>{const c=e.target.closest('.rz-pc');if
 
 <!-- CHAT -->
 <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
- <div id="cp" class="panel opacity-0 scale-90 pointer-events-none w-[290px] rounded-2xl bg-white text-black shadow-2xl p-6 text-[14px]"><div class="flex items-center gap-3"><img src="images/Logo.png" alt="Razcom" class="h-9 w-auto object-contain"></div><p class="mt-4 text-black/70">Besoin d'aide pour votre projet ? Je réponds en quelques minutes.</p><a href="https://wa.me/34632344243" class="btn bk w-full justify-center mt-5 !py-3">Écrire sur WhatsApp <i data-i="arr"></i></a></div>
+ <div id="cp" class="panel opacity-0 scale-90 w-[290px] rounded-2xl bg-white text-black shadow-2xl p-6 text-[14px]"><div class="flex items-center gap-3"><img src="images/Logo.png" alt="Razcom" class="h-9 w-auto object-contain"></div><p class="mt-4 text-black/70">Besoin d'aide pour votre projet ? Je réponds en quelques minutes.</p><a href="https://wa.me/34632344243" class="btn bk w-full justify-center mt-5 !py-3">Écrire sur WhatsApp <i data-i="arr"></i></a></div>
  <button id="cbn" class="w-14 h-14 rounded-full bg-lime text-black flex items-center justify-center text-[22px] shadow-xl transition hover:scale-110" aria-label="Discuter"><i data-i="msg"></i></button>
 </div>
 
