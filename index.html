@@ -534,16 +534,16 @@ parcoursAcc.addEventListener('keydown',e=>{const c=e.target.closest('.rz-pc');if
  <div class="wrapx relative grid md:grid-cols-[1.4fr_1fr_1fr_1.4fr] gap-12">
   <div><a href="#top" class="flex items-center gap-2.5 text-[24px] font-medium"><img src="images/Logo.png" alt="Razcom" class="h-12 w-auto object-contain"></a><p class="mt-4 text-[13px] text-white/60 max-w-xs">Votre partenaire de confiance pour tous vos projets de mobilité vers l'Europe depuis l'Afrique.</p>
    <div class="flex gap-7 mt-7 text-[12px]"><div><p class="text-white/45">Paris</p><b class="clk text-[20px] font-light" data-tz="Europe/Paris"></b></div><div><p class="text-white/45">Madrid</p><b class="clk text-[20px] font-light" data-tz="Europe/Madrid"></b></div><div><p class="text-white/45">Cotonou</p><b class="clk text-[20px] font-light" data-tz="Africa/Porto-Novo"></b></div></div></div>
-  <ul class="text-[13px] text-white/60 space-y-3"><li class="text-white font-medium">Services</li><li><a class="hover:text-white transition" href="#services">Études en Europe</a></li><li><a class="hover:text-white transition" href="#services">Voyage d'affaires</a></li><li><a class="hover:text-white transition" href="#services">Tourisme</a></li><li><a class="hover:text-white transition" href="#services">Expatriation</a></li><li><a class="hover:text-white transition" href="#services">Billetterie</a></li></ul>
-  <ul class="text-[13px] text-white/60 space-y-3"><li class="text-white font-medium">Agence</li><li><a class="hover:text-white transition" href="#methode">Pourquoi nous</a></li><li><a class="hover:text-white transition" href="#methode">Notre méthode</a></li><li><a class="hover:text-white transition" href="#partenaires">Écoles partenaires</a></li><li><a class="hover:text-white transition" href="#faq">FAQ</a></li><li><a class="hover:text-white transition" href="#contact">Contact</a></li></ul>
+  <ul class="text-[13px] text-white/60 space-y-3"><li class="text-white font-medium">Services</li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#services">Études en Europe</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#services">Voyage d'affaires</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#services">Tourisme</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#services">Expatriation</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#services">Billetterie</a></li></ul>
+  <ul class="text-[13px] text-white/60 space-y-3"><li class="text-white font-medium">Agence</li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#methode">Pourquoi nous</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#methode">Notre méthode</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#partenaires">Écoles partenaires</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#faq">FAQ</a></li><li><a class="hover:text-white transition inline-block px-4 py-2" href="#contact">Contact</a></li></ul>
   <div class="text-[13px]"><p class="font-medium">Newsletter</p><p class="text-white/60 mt-3">Nos conseils sur l'immigration et les études en Europe.</p>
    <form id="nl" class="mt-5 flex items-center rounded-full bg-white/10 pl-5 pr-1.5 py-1.5 transition focus-within:bg-white/15"><input required type="email" placeholder="Votre email" class="flex-1 min-w-0 bg-transparent outline-none text-[13px]"><button class="w-10 h-10 rounded-full bg-lime text-black flex items-center justify-center transition hover:scale-110" aria-label="S'inscrire"><i data-i="arr"></i></button></form></div>
  </div>
  <div class="relative overflow-hidden mt-16"><p class="font-medium text-[22vw] leading-[.78] tracking-[-.05em] text-white/[.04] text-center select-none">Razcom</p></div>
  <div class="wrapx relative pt-6 border-t border-white/10 flex flex-wrap gap-4 justify-between text-[11px] text-white uppercase tracking-[.2em]">
  <span>© 2026 Razcom. 
- <a href="./mentions-legales.html" class="text-lime hover:text-white transition">Mentions légales</a> |
- <a href="./confidentialite.html" class="text-lime hover:text-white transition">Confidentialité</a>
+<a href="./mentions-legales.html" class="text-lime hover:text-white transition inline-block px-4 py-2">Mentions légales</a> |
+<a href="./confidentialite.html" class="text-lime hover:text-white transition inline-block px-4 py-2">Confidentialité</a>
  </span>
 </div>
 </footer>
@@ -800,21 +800,18 @@ hyd();
 <script src="razcom-patch.js"></script>
 
 <!-- Cookie Consent Modal -->
-<div id="cookieConsent" class="fixed bottom-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-t border-white/10 padding-6 text-center max-w-2xl mx-auto" style="display: none;">
- <div class="px-6 py-4" style="background: rgba(0,0,0,0.8); color: #fff;">
-  <p class="text-white/80 mb-4 text-[12px]">Nous utilisons des cookies pour améliorer votre expérience, analyser l'audience et personnaliser le contenu.</p>
-  <div class="flex gap-4 justify-center">
-   <button id="acceptCookies" class="btn bl px-6 py-2">Accepter</button>
-   <button id="rejectCookies" class="btn bk px-6 py-2">Refuser</button>
-  </div>
+<div id="cookieConsent" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-black/80 backdrop-blur-md border-t border-white/10 padding-4 text-center max-w-md" style="display: none; pointer-events: auto;">
+ <p class="text-white/80 text-[12px] mb-4">Nous utilisons des cookies pour améliorer votre expérience.</p>
+ <div class="flex gap-2">
+  <button id="acceptCookies" class="btn bl px-4 py-1">Accepter</button>
+  <button id="rejectCookies" class="btn bk px-4 py-1">Refuser</button>
  </div>
 </div>
 
 <script>
-// Cookie Consent Management
+// Cookie Consent Management - ensure modal doesn't block other clicks
 const stored = localStorage.getItem('razcom_cookie_consent');
 
-// Show modal if no prior consent
 if (!stored) {
  // Make modal visible
  const modal = document.getElementById('cookieConsent');

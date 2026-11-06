@@ -295,9 +295,9 @@ input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;bac
    <div class="mt-16 pt-16 border-t border-white/10">
     <p class="text-center text-white uppercase text-[11px] tracking-[.2em]">
      © 2026 Razcom. 
-     <a href="../index.html#contact" class="text-lime hover:text-white transition">Contact</a> |
-     <a href="mentions-legales.html" class="text-lime hover:text-white transition">Mentions légales</a> |
-     <a href="confidentialite.html" class="text-lime hover:text-white transition">Confidentialité</a>
+     <a href="../index.html#contact" class="text-lime hover:text-white transition inline-block px-4 py-2">Contact</a> |
+     <a href="./mentions-legales.html" class="text-lime hover:text-white transition inline-block px-4 py-2">Mentions légales</a> |
+     <a href="./confidentialite.html" class="text-lime hover:text-white transition inline-block px-4 py-2">Confidentialité</a>
     </p>
    </div>
    
@@ -308,18 +308,16 @@ input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;bac
 <script src="razcom-patch.js"></script>
 
 <!-- Cookie Consent Modal -->
-<div id="cookieConsent" class="fixed bottom-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-t border-white/10 padding-6 text-center max-w-2xl mx-auto" style="display: none;">
- <div class="px-6 py-4" style="background: rgba(0,0,0,0.8); color: #fff;">
-  <p class="text-white/80 mb-4 text-[12px]">Nous utilisons des cookies pour améliorer votre expérience, analyser l'audience et personnaliser le contenu.</p>
-  <div class="flex gap-4 justify-center">
-   <button id="acceptCookies" class="btn bl px-6 py-2">Accepter</button>
-   <button id="rejectCookies" class="btn bk px-6 py-2">Refuser</button>
-  </div>
+<div id="cookieConsent" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 bg-black/80 backdrop-blur-md border-t border-white/10 padding-4 text-center max-w-md" style="display: none; pointer-events: auto;">
+ <p class="text-white/80 text-[12px] mb-4">Nous utilisons des cookies pour améliorer votre expérience.</p>
+ <div class="flex gap-2">
+  <button id="acceptCookies" class="btn bl px-4 py-1">Accepter</button>
+  <button id="rejectCookies" class="btn bk px-4 py-1">Refuser</button>
  </div>
 </div>
 
 <script>
-// Cookie Consent Management
+// Cookie Consent Management - ensure modal doesn't block other clicks
 const stored = localStorage.getItem('razcom_cookie_consent');
 
 if (!stored) {
